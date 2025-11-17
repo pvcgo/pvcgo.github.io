@@ -1,0 +1,169 @@
+a 
+{
+    text-decoration:none;
+}
+
+.appButton
+{
+    background-color: #fff;
+    color:rgba(0,0,0,1);
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    
+    width: 80%;
+    padding: 10px;
+
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.appButton:hover
+{
+    background-color:rgba(0,0,0,0.2);
+    color: white;
+}
+
+.appButton img
+{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+html
+{
+    background-image: linear-gradient(to bottom, #fff, #0abf58);
+}
+
+
+@media only screen and (max-width:576px)
+{
+    .leftPannel, .midPannel, .rightPannel
+    {
+        margin-top: 25px;
+        float:left;
+        width:95vw;
+        background:white;
+        border:1px solid rgba(0,0,0,0.2);
+        border-radius:15px;
+    }
+
+    .leftPannel, .midPannel, .rightPannel
+    {
+        display:block;
+    }
+
+    .midPannel, .rightPannel
+    {
+        display:none;
+    }
+}
+
+@media only screen and (min-width:577px) 
+{
+    .leftPannel
+    {
+        position:fixed;
+        top:15vh;
+        left:2vw;
+        width:30vw;
+        height:70vh;
+        background:white;
+        box-shadow:5px 5px rgba(0,0,0,0.5);
+        border:1px solid rgba(0,0,0,0.2);
+        border-radius:15px;
+    }
+    
+    .midPannel
+    {
+        position:fixed;
+        top:10vh;
+        left:34vw;
+        width:32vw;
+        height:80vh;
+        background:white;
+        box-shadow:5px 5px rgba(0,0,0,0.5);
+        border:1px solid rgba(0,0,0,0.2);
+        border-radius:15px;
+    }
+
+    .rightPannel
+    {
+        position:fixed;
+        top:15vh;
+        left:68vw;
+        width:30vw;
+        height:70vh;
+        background:white;
+        box-shadow:5px 5px rgba(0,0,0,0.5);
+        border:1px solid rgba(0,0,0,0.2);
+        border-radius:15px;
+    }
+}
+
+.navButtonContainer
+{
+    position: fixed;
+    bottom:10px;
+    left:0px;
+    width: 100vw;
+    text-align: center;
+}
+
+.navButton
+{
+    padding: 8px;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 25px;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0.5);
+}
+
+.navButton:active
+{
+    background-color: white;
+    color:black;
+}
+
+@media only screen and (min-width:577px)
+{
+    .navButtonContainer {display: none;}
+}
+
+
+.pannelDot
+{
+    background: #63dd52;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+@media only screen and (min-width: 577px) {
+    .hide-on-pc
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .pannel
+    {
+        animation: diChuyen 0.3s ease-out;
+    }
+}
+
+@keyframes diChuyenSangTrai
+{
+    from {transform: translateX(100%);opacity: 0;}
+    to {transform: translateX(0%);opacity: 1;}                  
+}
+
+@keyframes diChuyenSangPhai
+{
+    from {transform: translateX(-100%);opacity: 0;}
+    to {transform: translateX(0%);opacity: 1;}                  
+}

@@ -1,0 +1,215 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://pvctech.github.io/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="index_files/style.css?v=dev7"/>
+    <title>PVC APP</title>
+    <script src="index_files/js/button.js?v=1"></script>
+</head>
+<body style="color:rgba(0,0,0,0.6);font-size:12px;">
+    
+<div style="height:50px;">
+    &nbsp;
+</div>
+<div style="position:fixed;top:0px;left:0px;width:100%;z-index:101;">
+    <center>
+        <div  class="TableA" style="text-align:left;background:#0abf58;color:white;border:0px;border-radius:0px;padding:5px;">
+            <table style="color:white;">
+                <tr>
+                    <td>APP MENU</td>
+                    <td style="width:20px;"></td>
+                    <td class="hide-on-pc" style="vertical-align:middle;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                            <circle id="pannelDot_0" class="pannelDot" cx="10" cy="10" r="5" fill="white"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                            <circle id="pannelDot_1" class="pannelDot" cx="10" cy="10" r="5" fill="green"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                            <circle id="pannelDot_2" class="pannelDot" cx="10" cy="10" r="5" fill="green"/>
+                        </svg>
+                    </td>
+                </tr>
+            </table>    
+        </div>
+    </center>
+</div>
+
+<div id="leftPannel" class="leftPannel pannel">
+    <center>
+        <table id="dsMenu1Table" style="width:90%;margin-top:10px;"></table>
+        <script>
+            let tbl1 = document.getElementById('dsMenu1Table');
+            var DSButton1 = [
+                new MenuButton("https://canva.com",'Edit media','canva.png','15px'),
+                new MenuButton("https://chat.zalo.me",'Zalo','zalo.png','15px'),
+                new MenuButton("https://mail.google.com/",'Gmail','gmail.png','15px'),
+                new MenuButton("https://mailinhnamdinh.github.io/",'Mai Linh App','mailinh.png','18px'),
+                new MenuButton("https://pkpgroup.github.io/music-player-html/",'CD PKPPhương','cd.png','15px'),
+                new MenuButton("https://pkp-deptrai.github.io/PKPweb/thoi-khoa-bieu.htm",'Thời khoá biểu','','15px')
+            ];
+      
+            for (let i=1; i < DSButton1.length; i= i +2)
+            {
+                let tr = document.createElement('tr');
+                let td1 = document.createElement('td');
+                td1.style.width = '50%';
+                let td2 = document.createElement('td');
+
+                td1.appendChild(DSButton1[i].toElement());
+                if (i + 1 < DSButton1.length)
+                {
+                    td2.appendChild(DSButton1[i + 1].toElement());
+                }
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbl1.appendChild(tr);
+            }
+        </script>
+        <table id="dsMenu1Table2" style="width:90%;margin-top:20px;"></table>
+        <script>
+            let tbl12 = document.getElementById('dsMenu1Table2');
+            var DSButton12 = [
+                new MenuButton("https://github.com/",'Github','github.svg','15px'),
+                new MenuButton("https://file.pvcgo.net",'FAST FILE','file.jpg','15px'),
+                new MenuButton("https://tnu.aum.edu.vn/login/index.php",'TNU AUM','',''),
+                new MenuButton("https://tnu.pvcgo.net",'TNU PVC','',''),
+new MenuButton("https://phamcuong8868.github.io/chinese/",'Chinese everyday','','')];
+      
+            for (let i=0; i < DSButton12.length; i= i +2)
+            {
+                let tr = document.createElement('tr');
+                let td1 = document.createElement('td');
+                td1.style.width = '50%';
+                let td2 = document.createElement('td');
+
+                td1.appendChild(DSButton12[i].toElement());
+                if (i + 1 < DSButton12.length)
+                {
+                    td2.appendChild(DSButton12[i + 1].toElement());
+                }
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbl12.appendChild(tr);
+            }
+        </script>
+    </center>
+</div>
+
+<div id="midPannel" class="midPannel pannel">
+    <center>
+        <table id="dsMenu2Table" style="width:90%;margin-top:10px;"></table>
+            <script>
+                let DSButton2 = [
+                    new MenuButton("http://adminnamdinh.mailinhonline.vn", "MLO Admin", "qlptml.png", "15px"),
+                    new MenuButton("http://adminhbx.totgroup.vn", "HBX Admin", "hbx.png", "15px"),
+                    new MenuButton("http://namdinh.mailinhonline.vn", "Admin Taxi", "mlotd2.png", "25px"),
+                    new MenuButton("http://qlpt.mailinh.vn/", "Quản lý PT", "qlptml.png", "15px"),
+
+                    new MenuButton("http://smsb.mailinh.vn", "Lên ca SMSB", "smsb.png?v=3", "15px"),
+                    new MenuButton("http://mailinh.vn:6789/SMSB/", "SMSB HHi", "smsb.png?v=3", "15px"),
+                    
+                    new MenuButton("http://taxi2.congnghesotoancau.com.vn", "Định vị GPS", "cns.png", "15px"),
+                    new MenuButton("https://giamsattructuyen.hhi.com.vn:20551/login/", "Định vị GPS HHi", "cns.png", "15px")                 
+                ];
+
+                let tbl2 = document.getElementById('dsMenu2Table');
+                for (let i = 0; i < DSButton2.length; i += 2) {
+                    let tr = document.createElement('tr');
+                    let td1 = document.createElement('td');
+                    td1.style.width = '50%';
+                    let td2 = document.createElement('td');
+
+                    td1.appendChild(DSButton2[i].toElement());
+                    if (i + 1 < DSButton2.length) {
+                        td2.appendChild(DSButton2[i + 1].toElement());
+                    }
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tbl2.appendChild(tr);
+                }
+            </script>
+
+
+        <table id="dsMenu2Table2" style="width:90%;margin-top:20px;"></table>
+            <script>
+                let DSButton22 = [
+                    new MenuButton("http://sms.mailinh.vn:8100/", "Checker online", "", "15px"),
+                    new MenuButton("https://drivercare.mailinh.vn/", "DRIVER CARE", "", ""),
+                    new MenuButton("http://apps.mailinh.vn/ops/", "QC31 Xử lý, lưu", "", ""),                    
+                    
+                    new MenuButton("https://vetc.com.vn/", "VETC", "vetc.jpg", "20px"),
+                    new MenuButton("../vanhanh/xangvp/ketqua.php", "TH XĂNG VP", "", ""),
+                    new MenuButton("../vanhanh/xangvp/", "Ghi chép Sử dụng xe", "", ""),
+                    new MenuButton("https://mlnd.pvcgo.net/hoponline/", "Hướng dẫn HỌP ONLINE", "", "")
+                ];
+
+                let tbl22 = document.getElementById('dsMenu2Table2');
+                for (let i = 0; i < DSButton22.length; i += 2) {
+                    let tr = document.createElement('tr');
+                    let td1 = document.createElement('td');
+                    td1.style.width = '50%';
+                    let td2 = document.createElement('td');
+
+                    td1.appendChild(DSButton22[i].toElement());
+                    if (i + 1 < DSButton22.length) {
+                        td2.appendChild(DSButton22[i + 1].toElement());
+                    }
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tbl22.appendChild(tr);
+                }
+            </script>
+    </center>
+</div>
+
+
+<div id="rightPannel" class="rightPannel pannel">
+    <center>
+        <table id="dsMenu3Table" style="width:90%;margin-top:10px;"></table>
+            <script>
+                let DSButton3 = [
+                    new MenuButton("http://erp.mailinh.vn:2015/", "Histaff", "histaff.png", "15px"),
+                    new MenuButton("http://oms.mailinh.vn/", "iOMS trình ký", "mailinh.png", "15px"),
+                    
+                    new MenuButton("http://admin.mpass.biz", "Admin", "mpass.png", "55%"),
+                    new MenuButton("http://portal.mpass.biz", "Portal", "mpass.png", "55%"), 
+
+                    new MenuButton("https://mlcoac-nrtey1g5oo3u-nt.analytics.ocp.oraclecloud.com/ui/dv/?pageid=home", "Bcáo QT Oracle", "oraclequantri.png", "15px"),
+                    new MenuButton("http://fast.hoabinhxanhcoop.vn:48080/HOABINHXANH/Main/Login.aspx", "Kế toán FAST", "", ""),
+                    new MenuButton("https://ebry.login.ap2.oraclecloud.com/", "Kế toán", "oracle.svg", "55%"),
+                    new MenuButton("http://bdsc.mailinh.vn/loginns/ShowLoginPage.action", "Quản lý vật tư", "bdsc.png", "15px"),
+                    
+                    new MenuButton("https://training.mailinh.vn/", "Đào tạo", "mailinh.png", "15px"),
+                    new MenuButton("https://sys.mailinhlogistics.vn/", "Mai Linh Logistic", "", ""),
+                    new MenuButton("http://baohiem.pvcgo.net", "Sổ ghi bảo hiểm", "sobaohiem.ico", "15px"),
+                    
+                    new MenuButton("https://mlnd.pvcgo.net/card/index.php", "CARD VISIT", "card.jpg", "15px"),
+                    new MenuButton("https://vnsdi.monre.gov.vn/bandohanhchinh/", "Bản đồ địa chính", "", "15px")                    
+                ];
+
+
+                let tbl3 = document.getElementById('dsMenu3Table');
+                for (let i = 0; i < DSButton3.length; i += 2) {
+                    let tr = document.createElement('tr');
+                    let td1 = document.createElement('td');
+                    td1.style.width = '50%';
+                    let td2 = document.createElement('td');
+
+                    td1.appendChild(DSButton3[i].toElement());
+                    if (i + 1 < DSButton3.length) 
+                    {
+                        td2.appendChild(DSButton3[i + 1].toElement());
+                    }
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tbl3.appendChild(tr);
+                }
+            </script>
+    </center>
+</div>
+<script src="index_files/js/pannel.js?v=100001"></script>
+<script src="index_files/navButton.js?v=dev5"></script>
+
+
+
