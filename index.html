@@ -101,47 +101,9 @@
 
 <div id="midPannel" class="midPannel pannel">
     <center>
-        <table id="dsMenu2Table" style="width:90%;margin-top:10px;"></table>
-            <script>
-                let DSButton2 = [
-                    new MenuButton("http://adminnamdinh.mailinhonline.vn", "MLO Admin", "qlptml.png", "15px"),
-                    new MenuButton("http://adminhbx.totgroup.vn", "HBX Admin", "hbx.png", "15px"),
-                    new MenuButton("http://namdinh.mailinhonline.vn", "Admin Taxi", "mlotd2.png", "25px"),
-                    new MenuButton("http://qlpt.mailinh.vn/", "Quản lý PT", "qlptml.png", "15px"),
-
-                    new MenuButton("http://smsb.mailinh.vn", "Lên ca SMSB", "smsb.png?v=3", "15px"),
-                    new MenuButton("http://mailinh.vn:6789/SMSB/", "SMSB HHi", "smsb.png?v=3", "15px"),
-                    
-                    new MenuButton("http://taxi2.congnghesotoancau.com.vn", "Định vị GPS", "cns.png", "15px"),
-                    new MenuButton("https://giamsattructuyen.hhi.com.vn:20551/login/", "Định vị GPS HHi", "cns.png", "15px")                 
-                ];
-
-                let tbl2 = document.getElementById('dsMenu2Table');
-                for (let i = 0; i < DSButton2.length; i += 2) {
-                    let tr = document.createElement('tr');
-                    let td1 = document.createElement('td');
-                    td1.style.width = '50%';
-                    let td2 = document.createElement('td');
-
-                    td1.appendChild(DSButton2[i].toElement());
-                    if (i + 1 < DSButton2.length) {
-                        td2.appendChild(DSButton2[i + 1].toElement());
-                    }
-                    tr.appendChild(td1);
-                    tr.appendChild(td2);
-                    tbl2.appendChild(tr);
-                }
-            </script>
-
-
         <table id="dsMenu2Table2" style="width:90%;margin-top:20px;"></table>
             <script>
                 let DSButton22 = [
-                    new MenuButton("http://sms.mailinh.vn:8100/", "Checker online", "", "15px"),
-                    new MenuButton("https://drivercare.mailinh.vn/", "DRIVER CARE", "", ""),
-                    new MenuButton("http://apps.mailinh.vn/ops/", "QC31 Xử lý, lưu", "", ""),                    
-                    
-                    new MenuButton("https://vetc.com.vn/", "VETC", "vetc.jpg", "20px"),
                     new MenuButton("../vanhanh/xangvp/ketqua.php", "TH XĂNG VP", "", ""),
                     new MenuButton("../vanhanh/xangvp/", "Ghi chép Sử dụng xe", "", ""),
                     new MenuButton("https://mlnd.pvcgo.net/hoponline/", "Hướng dẫn HỌP ONLINE", "", "")
@@ -172,23 +134,12 @@
         <table id="dsMenu3Table" style="width:90%;margin-top:10px;"></table>
             <script>
                 let DSButton3 = [
-                    new MenuButton("http://erp.mailinh.vn:2015/", "Histaff", "histaff.png", "15px"),
-                    new MenuButton("http://oms.mailinh.vn/", "iOMS trình ký", "mailinh.png", "15px"),
-                    
-                    new MenuButton("http://admin.mpass.biz", "Admin", "mpass.png", "55%"),
-                    new MenuButton("http://portal.mpass.biz", "Portal", "mpass.png", "55%"), 
-
                     new MenuButton("https://mlcoac-nrtey1g5oo3u-nt.analytics.ocp.oraclecloud.com/ui/dv/?pageid=home", "Bcáo QT Oracle", "oraclequantri.png", "15px"),
                     new MenuButton("http://fast.hoabinhxanhcoop.vn:48080/HOABINHXANH/Main/Login.aspx", "Kế toán FAST", "", ""),
                     new MenuButton("https://ebry.login.ap2.oraclecloud.com/", "Kế toán", "oracle.svg", "55%"),
-                    new MenuButton("http://bdsc.mailinh.vn/loginns/ShowLoginPage.action", "Quản lý vật tư", "bdsc.png", "15px"),
-                    
-                    new MenuButton("https://training.mailinh.vn/", "Đào tạo", "mailinh.png", "15px"),
                     new MenuButton("https://sys.mailinhlogistics.vn/", "Mai Linh Logistic", "", ""),
-                    new MenuButton("http://baohiem.pvcgo.net", "Sổ ghi bảo hiểm", "sobaohiem.ico", "15px"),
-                    
-                    new MenuButton("https://mlnd.pvcgo.net/card/index.php", "CARD VISIT", "card.jpg", "15px"),
-                    new MenuButton("https://vnsdi.monre.gov.vn/bandohanhchinh/", "Bản đồ địa chính", "", "15px")                    
+                    new MenuButton("http://baohiem.pvcgo.net", "Sổ ghi bảo hiểm", "sobaohiem.ico", "15px"),                    
+                    new MenuButton("https://mailinhnamdinh.github.io/Ecard-maker/", "CARD VISIT", "card.jpg", "15px")                   
                 ];
 
 
@@ -213,6 +164,7 @@
 </div>
 <script src="index_files/js/pannel.js?v=100001"></script>
 <script src="index_files/navButton.js?v=dev5"></script>
+
 
 
 
