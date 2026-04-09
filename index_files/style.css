@@ -21,7 +21,7 @@ body
 {
     body
     {
-        background: #0abf58;
+        background-image: linear-gradient(to bottom,rgb(161, 218, 161), #0abf58);
     }
 }
 
