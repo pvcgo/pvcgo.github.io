@@ -12,13 +12,14 @@ a
 
 /*reset end*/
 
-html
+body
 {
     background-image: linear-gradient(to bottom, #fff, #0abf58);
+    min-height:100vh;
 }
 @media only screen and (max-width:576px)
 {
-    html
+    body
     {
         background-color: #0abf58;
     }
