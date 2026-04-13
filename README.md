@@ -24,3 +24,4 @@
 ### Giảm bug
 
 ### Hoàn thiện tài liệu đi kèm
+- UX/ UI:https://www.figma.com/design/Q15T4pJa4YIQyZNdUSqfIO/APP-MENU?t=YjGMyU81wpNuKkQN-0
