@@ -49,7 +49,7 @@ body
 
 .favorite-menu
 {
-    margin-top:50px;
+    margin-top:80px;
     width:90%;
     display:grid;
     grid-template-columns: repeat(6,1fr);
@@ -61,8 +61,8 @@ body
 {
     .favorite-menu
     {
-        width:100%
-        display:grid;
+        width:100%;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap:10px;
