@@ -74,7 +74,7 @@ body
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap:10px;
-        font-size:16px;
+        font-size:14px;
     }
 
     
@@ -138,7 +138,7 @@ body
             margin-right: 5px;
         }
 
-        .favorite-menu .appButton{padding:0px 25px;}
+        .favorite-menu .appButton{padding:25px 15px;font-weight:bold;}
 
 
 
