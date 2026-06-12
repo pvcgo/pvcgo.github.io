@@ -32,6 +32,11 @@ class MenuButton
                 img.style.width = this.imageWidth;
             }
 
+            if (this.imageHeight !== '')
+            {
+                img.style.height = this.imageHeight;
+            }
+
             divImg.appendChild(img);
             divv.appendChild(divImg);
             
