@@ -1,6 +1,6 @@
 class MenuButton
 {
-    constructor (pannelStt , id, link,text,imageSrc,imageWidth)
+    constructor (pannelStt , id, link,text,imageSrc,imageWidth="", imageHeight="")
     {
         this.pannelStt = pannelStt;
         this.id = id;
@@ -8,6 +8,7 @@ class MenuButton
         this.text = text;
         this.imageSrc = imageSrc;
         this.imageWidth = imageWidth;
+        this.imageHeight = imageHeight;
     }
 
     toElement()
