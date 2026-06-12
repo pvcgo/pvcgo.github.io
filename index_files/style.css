@@ -144,8 +144,8 @@ body
         .favorite-menu .appButton
         {
            flex-direction:column;
-            align-content:center;
-           padding:25px 15px;
+           align-content:center;
+           padding:20px 15px;
         }
 
 
