@@ -79,9 +79,6 @@ function renderFavoriteButtons()
 
     // Lấy 6 phần tử đầu tiên
     const top6 = sortedEntries.slice(0, 6);
-    // Log ra 6 key có value lớn nhất
-    console.log('Top 6 keys with highest values:', top6.map(([id, count]) => id));
-
     favoriteMenu.innerHTML = ''; // Xóa hết button cũ
 
     // Render button mới theo thứ tự top 6
