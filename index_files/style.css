@@ -77,7 +77,7 @@ body
         font-size:16px;
     }
 
-    .favorite-menu .appButton{padding: 15px 25px;}
+    
 }
 
         .pannel
@@ -137,6 +137,8 @@ body
             vertical-align: middle;
             margin-right: 5px;
         }
+
+        .favorite-menu .appButton{padding: 15px 25px;}
 
 
 
