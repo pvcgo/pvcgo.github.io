@@ -129,8 +129,11 @@ body
 
         @media only screen and (max-width:576px)
         {
-            flex-wrap: wrap;
-            text-align: center;
+             .appButton
+            {
+                flex-wrap: wrap;
+                text-align: center;
+            }
         }
 
         .appButton:hover
