@@ -5,6 +5,14 @@
     padding:0;
     font-size:14px;
 }
+@media only screen and (max-width:576px)
+{
+    :root
+    {
+        font-size:12px;
+    }
+}
+
 a 
 {
     text-decoration:none;
@@ -66,7 +74,10 @@ body
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap:10px;
+        font-size:16px;
     }
+
+    .favorite-menu .appButton{padding: 15px 25px;}
 }
 
         .pannel
