@@ -126,7 +126,8 @@ body
             text-align: left;
             text-decoration: none;
             cursor: pointer;
-        }
+        }
+
 
         .appButton:hover
         {
@@ -143,6 +144,7 @@ body
         .favorite-menu .appButton
         {
            flex-direction:column;
+            align-content:center;
            padding:25px 15px;
         }
 
