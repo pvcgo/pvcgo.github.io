@@ -117,6 +117,7 @@ body
         .appButton
         {
             display:flex;
+            gap:6px;
             flex-direction:row;
             background-color: #fff;
             color:rgba(0,0,0,1);
@@ -138,15 +139,13 @@ body
         .appButton img
         {
             vertical-align: middle;
-            margin-right: 5px;
             width:15px;
         }
+
         @media only screen and (max-width:576px)
         {
             .appButton img
             {
-                vertical-align: middle;
-                margin-right: 5px;
                 height:15px;
                 width:auto;
             }
