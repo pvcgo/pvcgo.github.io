@@ -117,29 +117,20 @@ body
         .appButton
         {
             display:flex;
-flex-direction:row;
+            flex-direction:row;
             background-color: #fff;
             color:rgba(0,0,0,1);
             border-radius: 12px;
-            border: 1px solid rgba(0,0,0,0.2);                    
+            border: 1px solid      rgba(0,0,0,0.2);                    
             padding: 15px;
             text-align: left;
             text-decoration: none;
             cursor: pointer;
-        }
-
-        @media only screen and (max-width:576px)
-        {
-             .appButton
-            {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
+        }
 
         .appButton:hover
         {
-            background-color:rgba(0,0,0,0.2);
+                 background-color:rgba(0,0,0,0.2);
             color: white;
         }
         
@@ -149,7 +140,11 @@ flex-direction:row;
             margin-right: 5px;
         }
 
-        .favorite-menu .appButton{padding:25px 15px;}
+        .favorite-menu .appButton
+        {
+           flex-direction:column;
+           padding:25px 15px;
+        }
 
 
 
