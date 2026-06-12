@@ -16,9 +16,11 @@ class MenuButton
         aa.href = this.link;
         let divv = document.createElement('div');
         divv.className = 'appButton';
+
+        let divImg = document.createElement('div');
         if (this.imageSrc == '')
         {
-
+            divv.appendChild(divImg);
         }
         else
         {
@@ -28,9 +30,15 @@ class MenuButton
             {
                 img.style.width = this.imageWidth;
             }
-            divv.appendChild(img);
+
+            divImg.appendChild(img);
+            divv.appendChild(divImg);
+            
         }
-        divv.appendChild(document.createTextNode(this.text));
+
+        let divText = document.createElement('div');
+        divText.appendChild(document.createTextNode(this.text));
+        divv.appendChild(divText);
         aa.appendChild(divv);
 
         aa.addEventListener('click', (e) => {
