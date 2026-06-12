@@ -116,6 +116,7 @@ body
 
         .appButton
         {
+            display:flex;
             background-color: #fff;
             color:rgba(0,0,0,1);
             border-radius: 12px;
@@ -124,6 +125,12 @@ body
             text-align: left;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        @media only screen and (max-width:576px)
+        {
+            flex-wrap: wrap;
+            text-align: center;
         }
 
         .appButton:hover
