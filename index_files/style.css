@@ -153,19 +153,19 @@ body
             }
         }
 
-        .pannel:nth-chid(1) 
+        .pannel-grid:nth-chid(1) 
         {
             animation: slideInLeft 0.5s ease-out forwards;
             animation-delay:0.5s;
         }
         
-        .pannel:nth-chid(2) 
+        .pannel-grid:nth-chid(2) 
         {
             animation: slideInUp 0.5s ease-out forwards;
             animation-delay:0s;
         }
         
-        .pannel:nth-chid(3) 
+        .pannel-grid:nth-chid(3) 
         {
             animation: slideInRight 0.5s ease-out forwards;
             animation-delay:1s;
