@@ -34,7 +34,33 @@ a
     }
 
     to {
-        transform:translateX(50%);
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideInRight
+{
+    from {
+        transform:translateX(100%);
+        opacity:0;
+    }
+
+    to {
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideInUp
+{
+    from {
+        transform:translateY(100%);
+        opacity:0;
+    }
+
+    to {
+        transform:translateX(0);
         opacity:1;
     }
 }
@@ -114,7 +140,7 @@ body
             border-radius: 15px;
             padding: 20px;
             box-shadow: 5px 6px 0 rgba(0,0,0,0.3);
-            animation: slideInLeft 0.5s ease-out forwards;
+            
         }
 
         @media only screen and (max-width:576px)
@@ -142,6 +168,24 @@ body
                 grid-template-columns: 1fr;
             }
         }
+
+pannel-grid:nth-chid(1) 
+{
+    animation: slideInLeft 0.5s ease-out forwards;
+    animation-delay:0.5s;
+}
+
+pannel-grid:nth-chid(2) 
+{
+    animation: slideInUp 0.5s ease-out forwards;
+    animation-delay:0s;
+}
+
+pannel-grid:nth-chid(3) 
+{
+    animation: slideInRight 0.5s ease-out forwards;
+    animation-delay:1s;
+}
 
         .appButton
         {
