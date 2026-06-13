@@ -137,7 +137,7 @@ body
 
         .appButton:hover
         {
-                 background-color:rgba(0,0,0,0.2);
+            background-image: linear-gradient(to bottom,rgb(161, 218, 161), #0abf58);
             color: white;
         }
         
