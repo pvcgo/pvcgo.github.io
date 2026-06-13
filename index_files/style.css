@@ -118,7 +118,7 @@ body
             .pannel
             {
                 margin-top:40px;
-                width:80%;
+                width:80%;forwards
                 box-shadow: 0 0 0 white;
             }
         }
@@ -128,7 +128,7 @@ body
             display:grid;
             grid-template-columns: 1fr 1fr;
             gap:12px;
-            animation: show 0.3s ease-out;
+            animation: show 0.3s ease-out forwards;
         }
 
         @media only screen and (max-width:576px)
