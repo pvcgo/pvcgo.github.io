@@ -56,11 +56,24 @@ a
 {
     from {
         transform:translateY(100%);
-        opacity:0;
     }
 
     to {
-        transform:translateX(0);
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeIn
+{
+    0% {
+        opacity:0;
+    }
+    65%
+    {
+        opacity:0.5;
+    }
+    100%
+    {
         opacity:1;
     }
 }
@@ -140,7 +153,8 @@ body
             border-radius: 15px;
             padding: 20px;
             box-shadow: 5px 6px 0 rgba(0,0,0,0.3);
-            animation: slideInUp 0.5s ease-out forwards;
+            animation: slideInUp 0.8s ease-out forwards,
+                fadeIn 1.3s ease-out forwards;
         }
 
         @media only screen and (max-width:576px)
