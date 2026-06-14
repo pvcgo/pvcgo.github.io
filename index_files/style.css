@@ -163,13 +163,13 @@ body
         animation: none;
     }
 
-    .favorite-menu .appButton:nth-child(odd)
+    .favorite-menu > a:nth-child(odd) > .appButton
     {
         animation: slideInLeft 0.8s ease-out forwards,
             fadeIn 1.3s ease-out forwards;
     }
     
-    .favorite-menu .appButton:nth-child(even)
+    .favorite-menu > a:nth-child(even) > .appButton
     {
         animation: slideInRight 0.8s ease-out forwards,
             fadeIn 1.3s ease-out forwards;
