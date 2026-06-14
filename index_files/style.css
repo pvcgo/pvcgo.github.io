@@ -137,8 +137,8 @@ body
     grid-template-columns: repeat(6,1fr);
     gap:20px;
     font-size: 18px;
-    animation: slideInDown 0.8s ease-out forwards,
-        fadeIn 1.3s ease-out forwards;
+    animation: slideInDown 0.5s ease-out forwards,
+        fadeIn 0.5s ease-out forwards;
 }
 
 .favorite-menu .appButton
