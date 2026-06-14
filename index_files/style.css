@@ -141,6 +141,16 @@ body
         fadeIn 1.3s ease-out forwards;
 }
 
+.favorite-menu .appButton
+{
+   flex-direction:column;
+   align-items:center;
+    text-align:center;
+   padding:20px 15px;
+}
+
+
+
 @media only screen and (max-width:576px)
 {
     .favorite-menu
@@ -150,7 +160,20 @@ body
         grid-template-rows: 1fr 1fr;
         gap:10px;
         font-size:14px;
-    }    
+        animation: none;
+    }
+
+    .favorite-menu .appButton:nth-child(odd)
+    {
+        animation: slideInLeft 0.8s ease-out forwards,
+            fadeIn 1.3s ease-out forwards;
+    }
+    
+    .favorite-menu .appButton:nth-child(even)
+    {
+        animation: slideInRight 0.8s ease-out forwards,
+            fadeIn 1.3s ease-out forwards;
+    }
 }
 
 .pannel
@@ -254,27 +277,9 @@ body
         height:15px;
         width:auto;
     }
-
-    .favorite-menu .appButton:nth-child(odd)
-    {
-        animation: slideInLeft 0.8s ease-out forwards,
-            fadeIn 1.3s ease-out forwards;
-    }
-    
-    .favorite-menu .appButton:nth-child(even)
-    {
-        animation: slideInRight 0.8s ease-out forwards,
-            fadeIn 1.3s ease-out forwards;
-    }
 }
 
-.favorite-menu .appButton
-{
-   flex-direction:column;
-   align-items:center;
-    text-align:center;
-   padding:20px 15px;
-}
+
 
 
 
