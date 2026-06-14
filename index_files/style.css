@@ -30,12 +30,10 @@ a
 {
     from {
         transform:translateX(-100%);
-        opacity:0;
     }
 
     to {
         transform:translateX(0);
-        opacity:1;
     }
 }
 
@@ -43,12 +41,10 @@ a
 {
     from {
         transform:translateX(100%);
-        opacity:0;
     }
 
     to {
         transform:translateX(0);
-        opacity:1;
     }
 }
 
@@ -153,8 +149,22 @@ body
             border-radius: 15px;
             padding: 20px;
             box-shadow: 5px 6px 0 rgba(0,0,0,0.3);
-            animation: slideInUp 0.8s ease-out forwards,
-                fadeIn 1.3s ease-out forwards;
+            animation: fadeIn 1.3s ease-out forwards;
+        }
+
+        .pannel1
+        {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .pannel2
+        {
+            animation: slideInUp 0.8s ease-out forwards;
+        }
+
+        .pannel1
+        {
+            animation: slideInRight 0.8s ease-out forwards;
         }
 
         @media only screen and (max-width:576px)
