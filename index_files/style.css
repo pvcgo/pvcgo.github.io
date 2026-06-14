@@ -138,7 +138,7 @@ body
     gap:20px;
     font-size: 18px;
     animation: slideInDown 0.5s ease-out forwards,
-        fadeIn 0.5s ease-out forwards;
+        fadeIn 0.8s ease-out forwards;
 }
 
 .favorite-menu .appButton
