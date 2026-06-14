@@ -254,6 +254,18 @@ body
         height:15px;
         width:auto;
     }
+
+    .favorite-menu .appButton:nth-child(odd)
+    {
+        animation: slideInLeft 0.8s ease-out forwards,
+            fadeIn 1.3s ease-out forwards;
+    }
+    
+    .favorite-menu .appButton:nth-child(even)
+    {
+        animation: slideInRight 0.8s ease-out forwards,
+            fadeIn 1.3s ease-out forwards;
+    }
 }
 
 .favorite-menu .appButton
@@ -264,17 +276,7 @@ body
    padding:20px 15px;
 }
 
-.favorite-menu .appButton:nth-child(odd)
-{
-    animation: slideInLeft 0.8s ease-out forwards,
-        fadeIn 1.3s ease-out forwards;
-}
 
-.favorite-menu .appButton:nth-child(even)
-{
-    animation: slideInRight 0.8s ease-out forwards,
-        fadeIn 1.3s ease-out forwards;
-}
 
 
 
