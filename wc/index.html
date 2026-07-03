@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIFA World Cup 2026 - Knockout Poster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <DIV style="position: fixed;top:0px;left: 0px;width: 100vw;height:100%;z-index:1000;
+      display: grid;grid-template-columns: 8fr 2fr;">
+        <soDo class="so-do">
+          <div class="header">
+            <div class="brand" aria-label="FIFA World Cup 2026">
+              <div class="brand-mark">🏆</div>
+            </div>        
+
+            <header class="hero">
+              <h2>LỊCH THI ĐẤU FIFA WORLD CUP 2026</h2>
+            </header>
+          </div>
+
+          <div>
+            <svg class="so-do-thi-dau" id="so-do-thi-dau" width="100%" height="100%" viewBox="0 0 1600 1000">     
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M220 70 H320 V100"/>
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M220 280 H320 V250"/>
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M220 415 H320 V445"/>
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M220 625 H320 V595"/>
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M440 185 H540 V275"/>
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M440 515 H540 V425"/>
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M660 350 H700"/>
+
+
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M900 350 H940"/>
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M1040 275 V190 H1160"/>
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M1040 425 V510 H1160"/>
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M1380 70 H1280 V100"/>
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M1380 280 H1280 V250"/>
+
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M1380 415 H1280 V445"/>
+              <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M1380 625 H1280 V595"/>
+            
+              <text x="290" y="50" fill="var(--gold)" font-size="24" font-weight="bold">TỨ KẾT</text>
+              <text x="1220" y="50" fill="var(--gold)" font-size="24" font-weight="bold">TỨ KẾT</text>
+
+              <text x="490" y="260" fill="var(--gold)" font-size="26" font-weight="bold">BÁN KẾT</text>
+              <text x="980" y="260" fill="var(--gold)" font-size="26" font-weight="bold">BÁN KẾT</text>
+
+              <text x="730" y="260" fill="var(--gold)" font-size="26" font-weight="bold">TRUNG KẾT</text>
+              <text x="710" y="485" fill="var(--gold)" font-size="26" font-weight="bold">TRANH GIẢI BA</text>
+            </svg>
+          </div>
+        </soDo>
+        <script>
+          const svg = document.getElementById("so-do-thi-dau");          
+          
+
+          class QuocGia
+          {
+            constructor(id, name, flagUrl)
+            {
+              this.id = id;
+              this.name = name;
+              this.flagUrl = flagUrl;
+            }
+          }
+
+          const danhSachQuocGia = [
+              new QuocGia("ALG", "Algeria", "https://flagcdn.com/dz.svg"),
+              new QuocGia("ARG", "Argentina", "https://flagcdn.com/ar.svg"),
+              new QuocGia("AUS", "Úc", "https://flagcdn.com/au.svg"),
+              new QuocGia("AUT", "Áo", "https://flagcdn.com/at.svg"),
+              new QuocGia("BEL", "Bỉ", "https://flagcdn.com/be.svg"),
+              new QuocGia("BIH", "Bosnia và Herzegovina", "https://flagcdn.com/ba.svg"),
+              new QuocGia("BRA", "Brazil", "https://flagcdn.com/br.svg"),
+              new QuocGia("CAN", "Canada", "https://flagcdn.com/ca.svg"),
+              new QuocGia("CPV", "Cape Verde", "https://flagcdn.com/cv.svg"),
+              new QuocGia("COL", "Colombia", "https://flagcdn.com/co.svg"),
+              new QuocGia("CIV", "Bờ Biển Ngà", "https://flagcdn.com/ci.svg"),
+              new QuocGia("CRO", "Croatia", "https://flagcdn.com/hr.svg"),
+              new QuocGia("ECU", "Ecuador", "https://flagcdn.com/ec.svg"),
+              new QuocGia("EGY", "Ai Cập", "https://flagcdn.com/eg.svg"),
+              new QuocGia("ENG", "Anh", "https://flagcdn.com/gb-eng.svg"),
+              new QuocGia("FRA", "Pháp", "https://flagcdn.com/fr.svg"),
+              new QuocGia("GER", "Đức", "https://flagcdn.com/de.svg"),
+              new QuocGia("GHA", "Ghana", "https://flagcdn.com/gh.svg"),
+              new QuocGia("JPN", "Nhật Bản", "https://flagcdn.com/jp.svg"),
+              new QuocGia("MAR", "Ma Rốc", "https://flagcdn.com/ma.svg"),
+              new QuocGia("MEX", "Mexico", "https://flagcdn.com/mx.svg"),
+              new QuocGia("NED", "Hà Lan", "https://flagcdn.com/nl.svg"),
+              new QuocGia("NOR", "Na Uy", "https://flagcdn.com/no.svg"),
+              new QuocGia("PAR", "Paraguay", "https://flagcdn.com/py.svg"),
+              new QuocGia("POR", "Bồ Đào Nha", "https://flagcdn.com/pt.svg"),
+              new QuocGia("RSA", "Nam Phi", "https://flagcdn.com/za.svg"),
+              new QuocGia("SEN", "Senegal", "https://flagcdn.com/sn.svg"),
+              new QuocGia("ESP", "Tây Ban Nha", "https://flagcdn.com/es.svg"),
+              new QuocGia("SWE", "Thụy Điển", "https://flagcdn.com/se.svg"),
+              new QuocGia("SUI", "Thụy Sĩ", "https://flagcdn.com/ch.svg"),
+              new QuocGia("USA", "Hoa Kỳ", "https://flagcdn.com/us.svg"),
+              new QuocGia("COD", "CHDC Congo", "https://flagcdn.com/cd.svg")
+          ];
+
+          const quocGiaMap = new Map(
+              danhSachQuocGia.map(qg => [qg.id, qg])
+          );
+
+          class TranDau
+          {
+            constructor(id, thoiGian, quocGiaAId, diemSoQuocGiaA, quocGiaBId, diemSoQuocGiaB)
+            {
+              this.id = id;
+              this.thoiGian = thoiGian;
+              this.quocGiaAId = quocGiaAId;
+              this.diemSoQuocGiaA = diemSoQuocGiaA;
+
+              this.quocGiaBId = quocGiaBId;
+              this.diemSoQuocGiaB = diemSoQuocGiaB;
+            }
+
+            renderDanhSachGanDay()
+            {
+              let urlA = "https://pvcgo.github.io/wc/blank.svg";
+              let nameA = "---";
+              let pointA = "-";
+              if (this.quocGiaAId !== null)
+              {
+                let qg = quocGiaMap.get(this.quocGiaAId);
+                urlA = qg.flagUrl;
+                nameA = qg.name;
+              }
+
+              if (this.diemSoQuocGiaA !== null)
+              {
+                pointA = this.diemSoQuocGiaA;
+              }
+
+              let urlB = "https://pvcgo.github.io/wc/blank.svg";
+              let nameB = "---";
+              let pointB = "-";
+              if (this.quocGiaBId !== null)
+              {
+                let qg = quocGiaMap.get(this.quocGiaBId);
+                urlB = qg.flagUrl;
+                nameB = qg.name;
+              }
+
+              if (this.diemSoQuocGiaB !== null)
+              {
+                pointB = this.diemSoQuocGiaB;
+              }
+
+              return `${this.thoiGian}<br>
+                <img src="${urlA}" width="28" height="20"><span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
+                <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><img src="${urlB}" width="28" height="20"><br>`;
+            }
+          }
+
+          class VongDau
+          {
+            constructor(ten, danhSachTranDau)
+            {
+              this.ten = ten;
+              this.danhSachTranDau = danhSachTranDau;
+            }
+          }
+
+
+          const vong32 = new VongDau("Vòng 32 đội", [
+              new TranDau(1,  "28/06 02:00", "RSA", 0, "CAN", 1),
+
+              new TranDau(2,  "29/06 00:00", "BRA", 2, "JPN", 1),
+              new TranDau(3,  "29/06 03:30", "GER", 1, "PAR", 1), // Paraguay thắng luân lưu
+              new TranDau(4,  "29/06 08:00", "NED", 1, "MAR", 1), // Ma Rốc thắng luân lưu
+
+              new TranDau(5,  "30/06 00:00", "CIV", 1, "NOR", 2),
+              new TranDau(6,  "30/06 04:00", "FRA", 3, "SWE", 0),
+              new TranDau(7,  "30/06 09:00", "MEX", 2, "ECU", 0),
+
+              new TranDau(8,  "01/07 23:00", "ENG", 2, "COD", 1),
+              new TranDau(9,  "02/07 03:00", "BEL", 3, "SEN", 2),
+              new TranDau(10, "02/07 07:00", "USA", 2, "BIH", 0),
+
+              new TranDau(11, "03/07 02:00", "ESP", 3, "AUT", 0),
+              new TranDau(12, "03/07 06:00", "POR", 2, "CRO", 1),
+              new TranDau(13, "03/07 10:00", "SUI", 2, "ALG", 0),
+
+              new TranDau(14, "04/07 03:00", "AUS", 1, "EGY", 1), // Ai Cập thắng luân lưu
+              new TranDau(15, "04/07 07:00", "ARG", null, "CPV", null),
+              new TranDau(16, "04/07 10:30", "COL", null, "GHA", null)
+          ]);
+
+
+          const vong16 = new VongDau("Vòng 16 đội", [
+              new TranDau(17, "05/07 02:00", "CAN", null, "MAR", null),
+              new TranDau(18, "05/07 06:00", "PAR", null, "FRA", null),
+
+              new TranDau(19, "07/07 02:00", "POR", null, "ESP", null),
+              new TranDau(20, "07/07 07:00", "USA", null, "BEL", null),
+
+              new TranDau(21, "06/07 03:00", "BRA", null, "NOR", null),
+              new TranDau(22, "06/07 07:00", "MEX", null, "ENG", null),              
+
+              new TranDau(23, "08/07 23:00", null, null, "EGY", null),
+              new TranDau(24, "09/07 03:00", "SUI", null, null, null)
+          ]);
+
+
+          const tuKet = new VongDau("Tứ kết", [
+              new TranDau(25, "10/07 03:00", null, null, null, null),
+              new TranDau(26, "10/07 23:00", null, null, null, null),
+              new TranDau(27, "12/07 05:00", null, null, null, null),
+              new TranDau(28, "12/07 09:00", null, null, null, null)
+          ]);
+
+          const banKet = new VongDau("Bán kết", [
+              new TranDau(29, "15/07 02:00", null, null, null, null),
+              new TranDau(30, "16/07 02:00", null, null, null, null)
+          ]);
+
+          const tranhHangBa = new VongDau("Tranh hạng ba", [
+              new TranDau(31, "19/07 04:00", null, null, null, null)
+          ]);
+
+          const chungKet = new VongDau("Chung kết", [
+              new TranDau(32, "20/07 02:00", null, null, null, null)
+          ]);
+
+          const danhSachVongDau = [vong32, vong16, tuKet, banKet, tranhHangBa, chungKet];
+
+
+          function themTranDau(vongDau, stt, x, y, tranDau, fill_opacity=0.2,stroke="white",w = 200, h = 140)
+          {
+            const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            //rect.setAttribute("id", vongDau + "_" + stt + "a");
+            rect.setAttribute("x", x);
+            rect.setAttribute("y", y);
+            rect.setAttribute("width", w);
+            rect.setAttribute("stroke", stroke);
+            rect.setAttribute("stroke-width", 3);
+            rect.setAttribute("stroke-opacity", 0.6);
+            rect.setAttribute("height", h);
+            rect.setAttribute("fill", "black");
+            rect.setAttribute("rx", 8);
+            rect.setAttribute("ry", 8);
+            rect.setAttribute("fill-opacity",fill_opacity);
+            svg.appendChild(rect);
+
+            const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            let urlA = "https://pvcgo.github.io/wc/blank.svg";
+            let nameA = "---";
+            let pointA = "-";
+            if (tranDau.quocGiaAId !== null)
+            {
+              let qg = quocGiaMap.get(tranDau.quocGiaAId);
+              urlA = qg.flagUrl;
+              nameA = qg.name;
+            }
+
+            if (tranDau.diemSoQuocGiaA !== null)
+            {
+              pointA = tranDau.diemSoQuocGiaA;
+            }
+
+            let urlB = "https://pvcgo.github.io/wc/blank.svg";
+            let nameB = "---";
+            let pointB = "-";
+            if (tranDau.quocGiaBId !== null)
+            {
+              let qg = quocGiaMap.get(tranDau.quocGiaBId);
+              urlB = qg.flagUrl;
+              nameB = qg.name;
+            }
+
+            if (tranDau.diemSoQuocGiaB !== null)
+            {
+              pointB = tranDau.diemSoQuocGiaB;
+            }
+
+            g.innerHTML = `
+                <text id="${vongDau}_${stt}_thoiGian" x="${x+42}" y="${y+24}" fill="white" font-size="16" font-weight="bold">${tranDau.thoiGian}</text>
+
+                <image id="${vongDau}_${stt}_a_image" href="${urlA}" x="${x+6}" y="${y+40}" width="38" height="28"/>
+
+                <text id="${vongDau}_${stt}_a_text" x="${x+60}" y="${y+60}" fill="white" font-size="20" font-weight="bold">${nameA}</text>
+
+                <text id="${vongDau}_${stt}_a_diem" x="${x+164}" y="${y+60}" fill="white" font-size="22" font-weight="bold">${pointA}</text>
+
+                <image id="${vongDau}_${stt}_b_image" href="${urlB}" x="${x+6}" y="${y+85}" width="38" height="28"/>
+
+                <text id="${vongDau}_${stt}_b_text" x="${x+60}" y="${y+107}" fill="white" font-size="20" font-weight="bold">${nameB}</text>
+
+                <text id="${vongDau}_${stt}_b_diem" x="${x+164}" y="${y+107}" fill="white" font-size="22" font-weight="bold">${pointB}</text>
+            `;
+
+            svg.appendChild(g);
+          }
+
+          for (let i=1; i<=4; i++)
+          {
+            themTranDau("vongDau16", i, 20, 20 + (i-1) * 170, vong16.danhSachTranDau[i-1]);
+          }
+
+          for (let i=5; i<=8; i++)
+          {
+            themTranDau("vongDau16", i, 1380, 20 + (i-5) * 170, vong16.danhSachTranDau[i-1]);
+          }
+
+          for (let i=1; i<=2; i++)
+          {
+            themTranDau("tuKet", i, 240, 105 + (i-1) * 345, tuKet.danhSachTranDau[i-1]);
+          }
+
+          for (let i=3; i<=4; i++)
+          {
+            themTranDau("tuKet", i, 1160, 105 + (i-3) * 345, tuKet.danhSachTranDau[i-1]);
+          }
+
+          themTranDau("banKet", 1, 460, 280, banKet.danhSachTranDau[0], 0.5, "var(--gold)");
+          themTranDau("banKet", 1, 940, 280, banKet.danhSachTranDau[1], 0.5, "var(--gold)");
+          themTranDau("trungKet", 1, 700, 280, chungKet.danhSachTranDau[0], 0.7, "red");
+          themTranDau("giai3", 1, 700, 500, tranhHangBa.danhSachTranDau[0], 0.6, "red");
+        </script>
+        <live style="background-color: rgba(255,255,255,0.1);box-shadow: 0 0 8px rgba(0,0,0,.4);
+          padding-right:40px;padding-top:20px;padding-left:20px;">
+          <div class="clock" aria-label="Đồng hồ">
+            <div class="live-row"><span class="live-dot"></span><span>LIVE</span><span id="todayMetric">--/--/----</span></div>
+            <div class="time" id="clockMetric">--:--:--</div>
+          </div>
+
+
+          <div style="margin-top: 25px;min-height: 20vh;font-size: small;">
+            <span><u>CÁC TRẬN ĐẤU HÔM NAY:</u></span><br>
+            <div id="danhSachTranDauHomNay">
+
+            </div>
+          </div>
+
+          <div style="margin-top: 40px;font-size: small;">
+            <span><u>CÁC TRẬN ĐẤU NGÀY MAI:</u></span><br>
+            <div id="danhSachTranDauNgayMai">
+              
+            </div>
+          </div>
+        </live>
+    </DIV>
+    <script>
+      const nows = new Date();
+      const ngay = parseInt(nows.getDate());          // 1-31
+      const thang = parseInt(nows.getMonth() + 1);    // 1-12 (phải +1)
+
+      function loadDanhSachTranDauSapToi()
+      {
+        
+        let dsHnayHTML = '';
+        let dsNMaiHTML = '';
+
+
+        for (let j =0; j < danhSachVongDau.length; j++)
+        {
+          for (let i =0; i < danhSachVongDau[j].danhSachTranDau.length; i++)
+          {
+            if (homNay(danhSachVongDau[j].danhSachTranDau[i]))
+            {
+              dsHnayHTML += danhSachVongDau[j].danhSachTranDau[i].renderDanhSachGanDay();
+            }
+            else if (ngayMai(danhSachVongDau[j].danhSachTranDau[i]))
+            {
+              dsNMaiHTML += danhSachVongDau[j].danhSachTranDau[i].renderDanhSachGanDay();
+            }
+          }
+        }
+
+        if (dsHnayHTML !== '')
+        {
+          document.getElementById('danhSachTranDauHomNay').innerHTML = dsHnayHTML;
+        }
+        else
+        {
+          document.getElementById('danhSachTranDauHomNay').innerHTML = "<i>không có trận nào</i>";
+        }
+
+        if (dsNMaiHTML !== '')
+        {
+          document.getElementById('danhSachTranDauNgayMai').innerHTML = dsNMaiHTML;
+        }
+        else
+        {
+          document.getElementById('danhSachTranDauNgayMai').innerHTML = "<i>không có trận nào</i>";
+        }
+        
+        
+      }
+
+      
+
+      function homNay(tranDau)
+      {
+        let tg = tranDau.thoiGian;
+        let month = parseInt(tg.substr(3,5));
+        let date = parseInt(tg.substr(0,2));
+
+        if (thang == month && ngay == date)
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+      }
+
+
+      function ngayMai(tranDau)
+      {
+        let tg = tranDau.thoiGian;
+        let month = parseInt(tg.substr(3,5));
+        let date = parseInt(tg.substr(0,2));
+
+        if (thang == month && ngay + 1 == date)
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+      }
+
+      loadDanhSachTranDauSapToi();
+    </script>
+
+
+    <section class="bracket" aria-live="polite" style="display: none;">
+      <section class="column left-32 left-side" aria-label="Vòng 1/16 nhánh trái">
+        <div class="stage-label">Vòng 1/16</div>
+        <div id="left32"></div>
+      </section>
+
+      <section class="column left-qf left-side" aria-label="Tứ kết nhánh trái">
+        <div></div>
+        <div class="stage-label">Tứ kết</div>
+        <div id="leftQf"></div>
+        <div></div>
+      </section>
+
+      <section class="center-stage" aria-label="Chung kết, bán kết và tranh hạng ba">
+        <article class="final-card">
+          <div class="stage-label">Chung kết</div>
+          <div class="final-date" id="finalDate">19/07/2026</div>
+          <div class="final-time" id="finalTime">07:00</div>
+          <div class="final-teams" id="finalTeams"></div>
+          <div class="venue" id="finalVenue">MetLife Stadium<small>New Jersey, USA</small></div>
+        </article>
+
+        <section class="final-card">
+          <div class="stage-label">Bán kết</div>
+          <div class="semi-row" id="semiMatches"></div>
+        </section>
+
+        <article class="third-card">
+          <div class="stage-label">Tranh hạng 3</div>
+          <div id="thirdMatch"></div>
+        </article>
+      </section>
+
+      <section class="column right-qf right-side" aria-label="Tứ kết nhánh phải">
+        <div></div>
+        <div class="stage-label">Tứ kết</div>
+        <div id="rightQf"></div>
+        <div></div>
+      </section>
+
+      <section class="column right-32 right-side" aria-label="Vòng 1/16 nhánh phải">
+        <div class="stage-label">Vòng 1/16</div>
+        <div id="right32"></div>
+      </section>
+    </section>
+
+    <form class="top-config" style="display: none;">
+      <label>
+        API token miễn phí
+        <input id="apiToken" type="password" autocomplete="off" placeholder="Dán X-Auth-Token từ football-data.org">
+      </label>
+      <button id="saveToken" type="button">Lưu token</button>
+      <button id="refreshNow" class="secondary" type="button">Cập nhật</button>
+    </form>
+
+    <p class="status-bar" id="notice" style="display: none;">
+      Dùng token miễn phí tại <a href="https://www.football-data.org/client/register" target="_blank" rel="noreferrer">football-data.org</a>. Dữ liệu tự cập nhật mỗi 5 phút.
+    </p>
+
+
+
+
+  <script>
+    const API_URL = "https://api.football-data.org/v4/competitions/WC/matches?season=2026";
+    const REFRESH_MS = 50 * 60 * 1000;
+    const STORAGE_KEY = "wc2026_football_data_token";
+
+    const STAGES = [
+      { key: "LAST_32", aliases: ["LAST_32", "ROUND_OF_32", "R32"] },
+      { key: "LAST_16", aliases: ["LAST_16", "ROUND_OF_16", "R16"] },
+      { key: "QUARTER_FINALS", aliases: ["QUARTER_FINALS", "QUARTER_FINAL", "QF"] },
+      { key: "SEMI_FINALS", aliases: ["SEMI_FINALS", "SEMI_FINAL", "SF"] },
+      { key: "THIRD_PLACE", aliases: ["THIRD_PLACE", "THIRD_PLACE_PLAYOFF"] },
+      { key: "FINAL", aliases: ["FINAL"] }
+    ];
+
+    const KNOCKOUT_STAGE_KEYS = new Set(STAGES.flatMap((stage) => stage.aliases));
+    const KNOCKOUT_START = new Date("2026-06-28T00:00:00Z").getTime();
+    const state = {
+      token: localStorage.getItem(STORAGE_KEY) || "",
+      matches: [],
+      nextRefreshAt: null,
+      refreshTimer: null,
+      countdownTimer: null
+    };
+
+    const els = {
+      token: document.querySelector("#apiToken"),
+      saveToken: document.querySelector("#saveToken"),
+      refreshNow: document.querySelector("#refreshNow"),
+      notice: document.querySelector("#notice"),
+      left32: document.querySelector("#left32"),
+      right32: document.querySelector("#right32"),
+      leftQf: document.querySelector("#leftQf"),
+      rightQf: document.querySelector("#rightQf"),
+      semi: document.querySelector("#semiMatches"),
+      third: document.querySelector("#thirdMatch"),
+      finalTeams: document.querySelector("#finalTeams"),
+      finalDate: document.querySelector("#finalDate"),
+      finalTime: document.querySelector("#finalTime"),
+      finalVenue: document.querySelector("#finalVenue"),
+      today: document.querySelector("#todayMetric"),
+      clock: document.querySelector("#clockMetric")
+    };
+
+    els.token.value = state.token;
+    render();
+    startClock();
+
+    if (state.token) {
+      fetchMatches();
+    }
+
+    els.saveToken.addEventListener("click", () => {
+      state.token = els.token.value.trim();
+      if (state.token) {
+        localStorage.setItem(STORAGE_KEY, state.token);
+        setNotice("Đã lưu token. Đang tải dữ liệu World Cup 2026...");
+        fetchMatches();
+      } else {
+        localStorage.removeItem(STORAGE_KEY);
+        state.matches = [];
+        clearTimeout(state.refreshTimer);
+        clearInterval(state.countdownTimer);
+        setNotice("Đã xoá token. Dán X-Auth-Token để bật cập nhật online.");
+        render();
+      }
+    });
+
+    els.refreshNow.addEventListener("click", fetchMatches);
+
+    async function fetchMatches() {
+      if (!state.token) {
+        setNotice("Bạn cần token miễn phí của football-data.org trước khi lấy lịch và kết quả online.");
+        render();
+        return;
+      }
+
+      els.refreshNow.disabled = true;
+      setNotice("Đang cập nhật dữ liệu online từ football-data.org...");
+
+      try {
+        const response = await fetch(API_URL, {
+          headers: {
+            "X-Auth-Token": state.token,
+            "X-Unfold-Goals": "true"
+          }
+        });
+
+        if (!response.ok) {
+          const body = await safeJson(response);
+          const message = body && (body.message || body.error) ? `: ${body.message || body.error}` : "";
+          throw new Error(`API trả về HTTP ${response.status}${message}`);
+        }
+
+        const data = await response.json();
+        state.matches = (data.matches || [])
+          .filter(isKnockoutMatch)
+          .sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
+
+        setNotice(`Đã cập nhật ${state.matches.length} trận knockout. Tự làm mới sau 5 phút.`);
+        render();
+      } catch (error) {
+        setNotice(`Không lấy được dữ liệu: ${error.message}. Kiểm tra token, quota hoặc quyền truy cập World Cup.`);
+        render();
+      } finally {
+        els.refreshNow.disabled = false;
+        scheduleRefresh();
+      }
+    }
+
+    function scheduleRefresh() {
+      clearTimeout(state.refreshTimer);
+      clearInterval(state.countdownTimer);
+      state.nextRefreshAt = Date.now() + REFRESH_MS;
+      state.refreshTimer = setTimeout(fetchMatches, REFRESH_MS);
+      state.countdownTimer = setInterval(() => {
+        const remaining = Math.max(0, state.nextRefreshAt - Date.now());
+        const minutes = Math.floor(remaining / 60000);
+        const seconds = Math.floor((remaining % 60000) / 1000);
+        if (state.token) setNotice(`Dữ liệu online. Lượt cập nhật tiếp theo sau ${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.`);
+      }, 1000);
+    }
+
+    function startClock() {
+      const tick = () => {
+        const now = new Date();
+        els.today.textContent = new Intl.DateTimeFormat("vi-VN", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric"
+        }).format(now);
+        els.clock.textContent = new Intl.DateTimeFormat("vi-VN", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false
+        }).format(now);
+      };
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    function render() {
+      const grouped = groupMatches(state.matches);
+      renderList(els.left32, take(grouped.LAST_32, 0, 8), 8, "left-side");
+      renderList(els.right32, take(grouped.LAST_32, 8, 16), 8, "right-side");
+      renderList(els.leftQf, take(grouped.QUARTER_FINALS, 0, 2), 2, "left-side");
+      renderList(els.rightQf, take(grouped.QUARTER_FINALS, 2, 4), 2, "right-side");
+      renderSemi(grouped.SEMI_FINALS);
+      renderThird(grouped.THIRD_PLACE[0]);
+      renderFinal(grouped.FINAL[0]);
+    }
+
+    function groupMatches(matches) {
+      const grouped = {
+        LAST_32: [],
+        LAST_16: [],
+        QUARTER_FINALS: [],
+        SEMI_FINALS: [],
+        THIRD_PLACE: [],
+        FINAL: []
+      };
+      for (const match of matches) {
+        const key = getStageKey(match);
+        if (grouped[key]) grouped[key].push(match);
+      }
+      return grouped;
+    }
+
+    function take(items, start, end) {
+      return items.slice(start, end);
+    }
+
+    function renderList(target, matches, count, sideClass) {
+      target.innerHTML = "";
+      for (let index = 0; index < count; index += 1) {
+        target.appendChild(renderMatch(matches[index], sideClass));
+      }
+    }
+
+    function renderSemi(matches) {
+      els.semi.innerHTML = "";
+      for (let index = 0; index < 2; index += 1) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "semi-card";
+        wrapper.appendChild(renderMatch(matches[index], ""));
+        els.semi.appendChild(wrapper);
+      }
+    }
+
+    function renderThird(match) {
+      els.third.innerHTML = "";
+      els.third.appendChild(renderMatch(match, ""));
+    }
+
+    function renderFinal(match) {
+      const finalDate = match ? new Date(match.utcDate) : new Date("2026-07-19T00:00:00Z");
+      els.finalDate.textContent = formatDate(finalDate);
+      els.finalTime.textContent = formatTime(finalDate);
+      els.finalVenue.innerHTML = `${escapeHtml(match && match.venue ? match.venue : "MetLife Stadium")}<small>New Jersey, USA</small>`;
+
+      const home = match && match.homeTeam ? match.homeTeam : {};
+      const away = match && match.awayTeam ? match.awayTeam : {};
+      const score = match && match.score ? match.score : {};
+      const fullTime = score.fullTime || {};
+      els.finalTeams.innerHTML = `
+        ${shield(home.shortName || home.name || "TBD", home.crest, fullTime.home)}
+        <div class="versus">${scoreText(fullTime.home, fullTime.away)}</div>
+        ${shield(away.shortName || away.name || "TBD", away.crest, fullTime.away)}
+      `;
+    }
+
+    function shield(name, crest, score) {
+      return `
+        <div class="shield">
+          <div class="shield-icon">${crest ? `<img src="${escapeHtml(crest)}" alt="">` : "?"}</div>
+          <span>${escapeHtml(name)}${score != null ? ` (${score})` : ""}</span>
+        </div>
+      `;
+    }
+
+    function renderMatch(match, sideClass) {
+      const card = document.createElement("article");
+      const status = String(match && match.status ? match.status : "SCHEDULED").toUpperCase();
+      card.className = `match-card ${sideClass || ""} ${status === "IN_PLAY" || status === "PAUSED" ? "live" : ""} ${status === "FINISHED" ? "finished" : ""}`;
+
+      if (!match) {
+        card.innerHTML = `
+          <div class="match-time">--/-- | --:--</div>
+          ${teamRow({ name: "TBD" }, null)}
+          ${teamRow({ name: "TBD" }, null)}
+        `;
+        return card;
+      }
+
+      const home = match.homeTeam || {};
+      const away = match.awayTeam || {};
+      const score = match.score || {};
+      const fullTime = score.fullTime || {};
+      const penalties = score.penalties || {};
+      const homeScore = formatScore(fullTime.home, penalties.home);
+      const awayScore = formatScore(fullTime.away, penalties.away);
+      const date = new Date(match.utcDate);
+
+      card.innerHTML = `
+        <div class="match-time">${formatDate(date)} | ${formatTime(date)}</div>
+        ${teamRow(home, homeScore)}
+        ${teamRow(away, awayScore)}
+      `;
+      return card;
+    }
+
+    function teamRow(team, score) {
+      const name = team.shortName || team.name || "TBD";
+      const crest = team.crest || "";
+      return `
+        <div class="team">
+          <span class="flag">${crest ? `<img src="${escapeHtml(crest)}" alt="">` : "•"}</span>
+          <span class="team-name">${escapeHtml(name)}</span>
+          <span class="score">${score ?? "-"}</span>
+        </div>
+      `;
+    }
+
+    function formatScore(score, penalties) {
+      if (score == null) return null;
+      if (penalties != null) return `${score}(${penalties})`;
+      return String(score);
+    }
+
+    function scoreText(home, away) {
+      if (home == null && away == null) return "-";
+      return `${home ?? "-"} - ${away ?? "-"}`;
+    }
+
+    function isKnockoutMatch(match) {
+      const stage = normalizeStage(match.stage);
+      const date = new Date(match.utcDate).getTime();
+      return KNOCKOUT_STAGE_KEYS.has(stage) || date >= KNOCKOUT_START;
+    }
+
+    function normalizeStage(stage) {
+      return String(stage || "").toUpperCase().replaceAll("-", "_").replaceAll(" ", "_");
+    }
+
+    function getStageKey(match) {
+      const normalized = normalizeStage(match.stage);
+      const found = STAGES.find((stage) => stage.aliases.includes(normalized));
+      if (found) return found.key;
+
+      const date = new Date(match.utcDate).getTime();
+      if (date >= new Date("2026-07-19T00:00:00Z").getTime()) return "FINAL";
+      if (date >= new Date("2026-07-18T00:00:00Z").getTime()) return "THIRD_PLACE";
+      if (date >= new Date("2026-07-14T00:00:00Z").getTime()) return "SEMI_FINALS";
+      if (date >= new Date("2026-07-09T00:00:00Z").getTime()) return "QUARTER_FINALS";
+      if (date >= new Date("2026-07-04T00:00:00Z").getTime()) return "LAST_16";
+      return "LAST_32";
+    }
+
+    function formatDate(date) {
+      if (Number.isNaN(date.getTime())) return "--/--";
+      return new Intl.DateTimeFormat("vi-VN", {
+        day: "2-digit",
+        month: "2-digit"
+      }).format(date);
+    }
+
+    function formatTime(date) {
+      if (Number.isNaN(date.getTime())) return "--:--";
+      return new Intl.DateTimeFormat("vi-VN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      }).format(date);
+    }
+
+    function setNotice(message) {
+      els.notice.innerHTML = `${escapeHtml(message)} Nguồn: <a href="https://www.football-data.org/" target="_blank" rel="noreferrer">football-data.org</a>.`;
+    }
+
+    async function safeJson(response) {
+      try {
+        return await response.json();
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+  </script>
+</body>
+</html>
