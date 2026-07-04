@@ -49,7 +49,7 @@
     .so-do
     {
       display: grid;
-      grid-template-rows: 100px auto auto;
+      grid-template-rows: 100px auto 100px;
     }
 
     .so-do-thi-dau
