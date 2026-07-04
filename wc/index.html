@@ -10,7 +10,20 @@
     <DIV style="position: fixed;top:0px;left: 0px;width: 100vw;height:100vh;z-index:1000;
       display: grid;grid-template-columns: 8fr 2fr;">
         <soDo class="so-do">         
+          <div class="header">
+            <div class="brand" aria-label="FIFA World Cup 2026">
+              <div class="brand-mark">🏆</div>
+            </div>        
 
+            <header class="hero">
+              <h2>LỊCH THI ĐẤU FIFA WORLD CUP 2026</h2>
+            </header>
+
+            <div>
+            </div>
+          </div>
+
+          
           <div style="vertical-align:text-top;">
             <svg class="so-do-thi-dau" id="so-do-thi-dau" width="100%" height="100%" viewBox="0 0 1600 1000">     
               <path fill="none" stroke="white" stroke-width="3" stroke-opacity="0.7" d="M220 70 H320 V100"/>
@@ -48,20 +61,7 @@
             </svg>
           </div>
 
-          <div class="header">
-            <div class="brand" aria-label="FIFA World Cup 2026">
-              <div class="brand-mark">🏆</div>
-            </div>        
-
-            <header class="hero">
-              <h2>LỊCH THI ĐẤU FIFA WORLD CUP 2026</h2>
-            </header>
-
-            <div>
-              <div class="live-row"><span class="live-dot"></span><span>LIVE</span><span id="todayMetric">--/--/----</span></div>
-              <div class="time" id="clockMetric">--:--:--</div>
-            </div>
-          </div>
+          
         </soDo>
         <script>
           setTimeout(function(){window.location.reload();}, 300000);
@@ -386,7 +386,29 @@
         <div style="background-color: rgba(0,0,0,0.6);box-shadow: 0 0 8px rgba(255,255,255,.4);
           padding:30px;display: grid; grid-template-rows: 1fr;height:100%;">
             <div style="margin-top: 10px;min-height: 20vh;font-size: medium;">
-              <span style="font-weight:bold;">CÁC TRẬN ĐẤU HÔM NAY</span><br>
+              <div>
+                <span class="live-dot"></span><span>LIVE</span>
+                <span id="homNay">--/--/----</span>
+                <div class="time" id="clock">--:--:--</div>
+              </div>
+              <script>
+                const divHomNay = document.getElementById('homNay');
+                const divClock = document.getElementById('clock');
+                function startClock()
+                {
+                  let nows = new Date();
+                  let ngay = parseInt(nows.getDate());          // 1-31
+                  let thang = parseInt(nows.getMonth() + 1);    // 1-12 (phải +1)
+                  let gio = nows.getHours();      // 0 - 23
+                  let phut = nows.getMinutes();  // 0 - 59
+                  let giay = nows.getSeconds();
+                  divHomNay.innerHTML = ngay + "/" + thang + "2026";
+                  divClock.innerHTML = gio + ":" phut + ":" + giay;
+                }
+
+                setInterval(function(){startClock();}, 1000);
+              </script>
+              <span style="font-weight:bold;margin-top: 10px;">CÁC TRẬN ĐẤU HÔM NAY</span><br>
               <div id="danhSachTranDauHomNay">
 
               </div>
