@@ -333,8 +333,8 @@
           themTranDau("trungKet", 1, 700, 280, chungKet.danhSachTranDau[0], 0.7, "red");
           themTranDau("giai3", 1, 700, 500, tranhHangBa.danhSachTranDau[0], 0.6, "red");
         </script>
-        <live style="background-color: rgba(0,0,0,0.3);box-shadow: 0 0 8px rgba(0,0,0,.4);
-          padding:30px;">
+        <div style="background-color: rgba(0,0,0,0.3);box-shadow: 0 0 8px rgba(0,0,0,.4);
+          padding:30px;display: grid; grid-template-rows: 100px 1fr 1fr 200px;">
           <div class="clock" aria-label="Đồng hồ">
             <div class="live-row"><span class="live-dot"></span><span>LIVE</span><span id="todayMetric">--/--/----</span></div>
             <div class="time" id="clockMetric">--:--:--</div>
@@ -354,7 +354,11 @@
               
             </div>
           </div>
-        </live>
+          
+          <div>
+            <img src="https://counter11.optistats.ovh/private/freecounterstat.php?c=exnkkf2q79enen3mm42clep2ffhya7nx" border="0" title="page counter" alt="page counter">
+          </div>
+        </div>
     </DIV>
     <script>
       const nows = new Date();
