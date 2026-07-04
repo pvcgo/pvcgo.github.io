@@ -387,7 +387,11 @@
           padding:30px;display: grid; grid-template-rows: 1fr;height:100%;">
             <div style="font-size: medium;">
               <div>
-                <span class="live-dot"></span><span>LIVE</span>
+                <svg width="20" height="20" viewbox="0 0 20 20">
+                  <circle cx="10" cy="10" r="10" fill="red" fill-opacity="0.3"></circle>
+                  <circle cx="10" cy="10" r="6" fill="red" fill-opacity="0.9"></circle>
+                </svg>
+                <span>LIVE</span>
                 <span id="homNay">--/--/----</span>
                 <div class="time" id="clock">--:--:--</div>
               </div>
