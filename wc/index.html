@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FIFA World Cup 2026 - Knockout Poster</title>
-  <link rel="stylesheet" href="style.css?v=dev2">
+  <link rel="stylesheet" href="style.css?v=dev3">
 </head>
 <body>
     <DIV style="position: fixed;top:0px;left: 0px;width: 100vw;height:100%;z-index:1000;
@@ -18,6 +18,11 @@
             <header class="hero">
               <h2>LỊCH THI ĐẤU FIFA WORLD CUP 2026</h2>
             </header>
+
+            <div class="clock" aria-label="Đồng hồ">
+              <div class="live-row"><span class="live-dot"></span><span>LIVE</span><span id="todayMetric">--/--/----</span></div>
+              <div class="time" id="clockMetric">--:--:--</div>
+            </div>
           </div>
 
           <div style="vertical-align:text-top;">
@@ -377,12 +382,8 @@
           themTranDau("trungKet", 1, 700, 280, chungKet.danhSachTranDau[0], 0.7, "red");
           themTranDau("giai3", 1, 700, 500, tranhHangBa.danhSachTranDau[0], 0.6, "red");
         </script>
-        <div style="background-color: rgba(0,0,0,0.6);box-shadow: 0 0 8px rgba(0,0,0,.4);
-          padding:30px;display: grid; grid-template-rows: 60px 1fr 1fr auto;">
-          <div class="clock" aria-label="Đồng hồ">
-            <div class="live-row"><span class="live-dot"></span><span>LIVE</span><span id="todayMetric">--/--/----</span></div>
-            <div class="time" id="clockMetric">--:--:--</div>
-          </div>
+        <div style="background-color: rgba(0,0,0,0.6);box-shadow: 0 0 8px rgba(255,255,255,.4);
+          padding:30px;display: grid; grid-template-rows: 1fr 1fr auto;">       
 
 
           <div style="margin-top: 25px;min-height: 20vh;font-size: medium;">
