@@ -394,6 +394,11 @@
               <script>
                 const divHomNay = document.getElementById('homNay');
                 const divClock = document.getElementById('clock');
+                function formatTime(h)
+                {
+                  return parseInt(h) < 10 ? "0" + parseInt(h) : parseInt(h);
+                }
+                
                 function startClock()
                 {
                   let nows = new Date();
@@ -402,8 +407,8 @@
                   let gio = nows.getHours();      // 0 - 23
                   let phut = nows.getMinutes();  // 0 - 59
                   let giay = nows.getSeconds();
-                  divHomNay.innerHTML = ngay + "/" + thang + "2026";
-                  divClock.innerHTML = gio + ":" + phut + ":" + giay;
+                  divHomNay.innerHTML = formatTime(ngay) + "/" + formatTime(thang) + "2026";
+                  divClock.innerHTML = formatTime(gio) + ":" + formatTime(phut) + ":" + formatTime(giay);
                 }
 
                 setInterval(function(){startClock();}, 1000);
