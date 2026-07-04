@@ -160,9 +160,11 @@
                 <img src="${urlA}" width="28" height="20"><span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
                 <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><img src="${urlB}" width="28" height="20"><br>`;
 */
-              return `${this.thoiGian}<br>
-                <span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
-                <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><p>`;
+              return `<div style="border-radius: 6px; border: 1px solid rgba(255,255,255,0.7);padding:8px">
+                        <i>${this.thoiGian}</i><br>
+                        <span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
+                        <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><p>
+                      </div>`;
             }
           }
 
@@ -339,14 +341,14 @@
           </div>
 
 
-          <div style="margin-top: 25px;min-height: 20vh;font-size: small;">
+          <div style="margin-top: 25px;min-height: 20vh;font-size: medium;">
             <span><u>CÁC TRẬN ĐẤU HÔM NAY:</u></span><br>
             <div id="danhSachTranDauHomNay">
 
             </div>
           </div>
 
-          <div style="margin-top: 40px;font-size: small;">
+          <div style="margin-top: 40px;font-size: medium;">
             <span><u>CÁC TRẬN ĐẤU NGÀY MAI:</u></span><br>
             <div id="danhSachTranDauNgayMai">
               
