@@ -435,7 +435,13 @@
         let hour = parseInt(tg.substr(6,8));
         let minute = parseInt(tg.substr(9,11));
 
-        if (thang == month && ngay == date && ((gio == hour && phut >= minute) || (gio == hour + 1 && phut + 60 - minute < 105) || (gio == hour + 2 && phut + 60 + 60 - minute < 105))
+        if (
+          (thang == month && ngay == date &&
+             ((gio == hour && phut >= minute) || (gio == hour + 1 && phut + 60 - minute < 105) || (gio == hour + 2 && phut + 60 + 60 - minute < 105)))
+             ||
+              (thang == month && ngay == date + 1 &&
+             ((hour== 23 && gio == 0 && phut + 60 - minute < 105) || (hour== 23 && gio == 1 && phut + 60 + 60 - minute < 105) || (hour== 22 && gio == 0 && phut + 60 + 60 - minute < 105)))
+            )
         {
           return true;
         }
