@@ -124,7 +124,7 @@
               this.diemSoQuocGiaB = diemSoQuocGiaB;
             }
 
-            renderDanhSachGanDay()
+            renderDanhSachGanDay(dangDienRa = 0)
             {
               let urlA = "https://pvcgo.github.io/wc/blank.svg";
               let nameA = "---";
@@ -160,11 +160,22 @@
                 <img src="${urlA}" width="28" height="20"><span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
                 <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><img src="${urlB}" width="28" height="20"><br>`;
 */
-              return `<div style="border-radius: 6px; border: 0.5px solid rgba(255,255,255,0.7);padding:8px;margin-top:6px;">
-                        <span style="font-size:small;"><i>${this.thoiGian}</i></span><br>
-                        <span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
-                        <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><p>
-                      </div>`;
+              if (dangDienRa == 0)
+              {
+                return `<div style="border-radius: 6px; border: 0.5px solid rgba(255,255,255,0.7);padding:8px;margin-top:6px;">
+                          <span style="font-size:small;"><i>${this.thoiGian}</i></span><br>
+                          <span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
+                          <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><p>
+                        </div>`;
+              }
+              else
+              {
+                return `<div style="border-radius: 6px; border: 1.5px solid orange;padding:8px;margin-top:6px;box-shadow: 0px 0px 6px rgba(255,255,255,0.4);color:var(--gold);font-weight:bold;">
+                          <span style="font-size:small;"><i>${this.thoiGian}</i></span><br>
+                          <span style="margin-left:10px;">${nameA}</span><span style="margin-left:10px;">${pointA}</span> - 
+                          <span style="margin-right:10px;">${pointB}</span><span style="margin-right:10px;">${nameB}</span><p>
+                        </div>`;
+              }
             }
           }
 
@@ -361,9 +372,7 @@
         </div>
     </DIV>
     <script>
-      const nows = new Date();
-      const ngay = parseInt(nows.getDate());          // 1-31
-      const thang = parseInt(nows.getMonth() + 1);    // 1-12 (phải +1)
+      
 
       function loadDanhSachTranDauSapToi()
       {
@@ -376,7 +385,11 @@
         {
           for (let i =0; i < danhSachVongDau[j].danhSachTranDau.length; i++)
           {
-            if (homNay(danhSachVongDau[j].danhSachTranDau[i]))
+            if (dangDienRa(danhSachVongDau[j].danhSachTranDau[i]))
+            {
+              dsHnayHTML += danhSachVongDau[j].danhSachTranDau[i].renderDanhSachGanDay(1);
+            }
+            else if (homNay(danhSachVongDau[j].danhSachTranDau[i]))
             {
               dsHnayHTML += danhSachVongDau[j].danhSachTranDau[i].renderDanhSachGanDay();
             }
@@ -408,10 +421,35 @@
         
       }
 
-      
+      function dangDienRa(tranDau)
+      {
+        let nows = new Date();
+        let ngay = parseInt(nows.getDate());          // 1-31
+        let thang = parseInt(nows.getMonth() + 1);    // 1-12 (phải +1)
+        let gio = nows.getHours();      // 0 - 23
+        let phut = nows.getMinutes();  // 0 - 59
+        
+        let tg = tranDau.thoiGian;
+        let month = parseInt(tg.substr(3,5));
+        let date = parseInt(tg.substr(0,2));
+        let hour = parseInt(tg.substr(6,8));
+        let minute = parseInt(tg.substr(9,11));
+
+        if (thang == month && ngay == date && ((gio == hour && phut >= minute) || (gio == hour + 1 && phut + 60 - minute < 105) || (gio == hour + 2 && phut + 60 + 60 - minute < 105))
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+      }
 
       function homNay(tranDau)
       {
+        let nows = new Date();
+        let ngay = parseInt(nows.getDate());          // 1-31
+        let thang = parseInt(nows.getMonth() + 1);    // 1-12 (phải +1)
         let tg = tranDau.thoiGian;
         let month = parseInt(tg.substr(3,5));
         let date = parseInt(tg.substr(0,2));
@@ -429,6 +467,9 @@
 
       function ngayMai(tranDau)
       {
+        let nows = new Date();
+        let ngay = parseInt(nows.getDate());          // 1-31
+        let thang = parseInt(nows.getMonth() + 1);    // 1-12 (phải +1)
         let tg = tranDau.thoiGian;
         let month = parseInt(tg.substr(3,5));
         let date = parseInt(tg.substr(0,2));
