@@ -387,12 +387,14 @@
           padding:30px;display: grid; grid-template-rows: 1fr;height:100%;">
             <div style="font-size: medium;">
               <div style="margin-bottom:10px;">
-                <svg width="20" height="20" viewbox="0 0 20 20">
-                  <circle cx="10" cy="10" r="10" fill="red" fill-opacity="0.3"></circle>
-                  <circle cx="10" cy="10" r="6" fill="red" fill-opacity="0.9"></circle>
-                </svg>
-                <span>LIVE</span>
-                <span id="homNay">--/--/----</span>
+                <div style="display:grid;grid-template-columns: 20px auto auto;">
+                  <svg width="20" height="20" viewbox="0 0 20 20">
+                    <circle cx="10" cy="10" r="10" fill="red" fill-opacity="0.3"></circle>
+                    <circle cx="10" cy="10" r="6" fill="red" fill-opacity="0.9"></circle>
+                  </svg>
+                  <span>LIVE</span>
+                  <span id="homNay">--/--/----</span>
+                </div>
                 <div class="time" id="clock">--:--:--</div>
               </div>
               <script>
