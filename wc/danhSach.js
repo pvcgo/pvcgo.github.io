@@ -30,7 +30,7 @@ const vong32 = new VongDau("Vòng 32 đội", [
               new TranDau(19, "07/07 02:00", "BoDaoNha", null, "TayBanNha", null),
               new TranDau(20, "07/07 07:00", "USA", null, "Bir", null),
 
-              new TranDau(21, "06/07 03:00", "BRA", null, "nauy", null),
+              new TranDau(21, "06/07 03:00", "BRA", 1, "nauy", 2),
               new TranDau(22, "06/07 07:00", "MEXi", null, "ENG", null),              
 
               new TranDau(23, "07/07 23:00", "AcHen", null, "AiCap", null),
