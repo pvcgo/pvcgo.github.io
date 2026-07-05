@@ -103,6 +103,11 @@
       display: grid;
       grid-template-columns: 8fr 2fr;
     }
+    
+    .live__container
+      {
+        padding: 30px;
+      }
 
     .sap-toi
     {
@@ -140,6 +145,10 @@
         text-align: center;
         font-weight: 700;
     }
+      .live__container
+      {
+        padding: 10px;
+      }
       .sap-toi
       {
         height: 40vh;
@@ -228,7 +237,7 @@
         <script src="danhSach.js?v=dev1"></script>
         <script src="draw.js"></script>
         <div style="background-color: rgba(0,0,0,0.6);box-shadow: 0 0 8px rgba(255,255,255,.4);
-          padding:30px;display: grid; grid-template-rows: 1fr;height:100%;">
+          display: grid; grid-template-rows: 1fr;height:100%;" class="live__container">
             <div style="font-size: medium;">
               <div style="margin-bottom:10px;">
                 <div style="display:grid;grid-template-columns: 20px auto auto;">
@@ -264,7 +273,7 @@
                 setInterval(function(){startClock();}, 1000);
               </script>
               <div style="font-size: medium;" class="sap-toi">
-                <div style="font-weight:bold;margin-top: 30px;">HÔM NAY</div>
+                <div style="font-weight:bold;">HÔM NAY</div>
                 <div id="danhSachTranDauHomNay">
   
                 </div>
