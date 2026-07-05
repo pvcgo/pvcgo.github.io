@@ -4,11 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FIFA World Cup 2026 - Knockout Poster</title>
-  <link rel="stylesheet" href="style.css?v=dev6">
+  <link rel="stylesheet" href="style2.css?v=dev6">
 </head>
 <body>
-    <DIV style="position: fixed;top:0px;left: 0px;width: 100vw;height:100vh;z-index:1000;
-      display: grid;grid-template-columns: 8fr 2fr;">
+  <style>
+    .home__container
+    {
+      position: fixed;
+      top:0px;
+      left: 0px;
+      width: 100vw;
+      height:100vh;
+      z-index:1000;
+      display: grid;
+      grid-template-columns: 8fr 2fr;
+    }
+    
+    @media only screen and()
+    {
+      .home__container
+      {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+    <DIV class="home__container">
         <soDo class="so-do">         
           <div class="header">
             <div class="brand" aria-label="FIFA World Cup 2026">
