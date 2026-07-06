@@ -13,9 +13,12 @@
       <div></div>
       <div onclick="document.getElementById('divShare').style.display ='none';" style="padding: 8px;">x</div>
     </div>
-    <div style="display:grid; grid-template-columns: 1fr;
-              place-items: center;width:100%;">
-      <img src="qr.png" style="width: 100px; height: 100px;">
+    <div style="display:grid; grid-template-columns: 8fr 2fr;
+              width:100%;">
+        <div style="display:grid; grid-template-columns: 1fr; place-items: center;">
+          <img src="qr.png" style="width: 120px; height: 120px;">
+        </div>
+        <div></div>
     </div>
   </div>
   <style>
@@ -24,7 +27,8 @@
       color-scheme: dark; 
       --paper: #fff7dc;
       --muted: rgba(255, 247, 220, 0.72);
-      --panel: rgba(16, 21, 43, 0.62);
+      --panel: rgba(16, 21, 43, 0.62);justify-items: center;
+align-items: center;
       --panel-red: rgba(96, 18, 25, 0.62);
       --panel-blue: rgba(15, 48, 105, 0.62);
       --line: rgba(255, 247, 220, 0.52);
