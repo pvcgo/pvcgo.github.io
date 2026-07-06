@@ -27,7 +27,7 @@ const vong32 = new VongDau("Vòng 32 đội", [
               new TranDau(17, "05/07 00:00", "CAN", 0, "MARoc", 3),
               new TranDau(18, "05/07 04:00", "PAR", 0, "FRA", 1),
 
-              new TranDau(19, "07/07 02:00", "BoDaoNha", null, "TayBanNha", null),
+              new TranDau(19, "07/07 02:00", "BoDaoNha", 0, "TayBanNha", 1),
               new TranDau(20, "07/07 07:00", "USA", null, "Bir", null),
 
               new TranDau(21, "06/07 03:00", "BRA", 1, "nauy", 2),
@@ -40,7 +40,7 @@ const vong32 = new VongDau("Vòng 32 đội", [
 
           const tuKet = new VongDau("Tứ kết", [
               new TranDau(25, "10/07 03:00", "MARoc", null, "FRA", null),
-              new TranDau(26, "11/07 02:00", null, null, null, null),
+              new TranDau(26, "11/07 02:00", "TayBanNha", null, null, null),
               new TranDau(27, "12/07 04:00", "nauy", null, "ENG", null),
               new TranDau(28, "12/07 08:00", null, null, null, null)
           ]);
