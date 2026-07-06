@@ -102,7 +102,7 @@ setTimeout(function(){window.location.reload();}, 300000);
 */
               if (dangDienRa == 0)
               {
-                return `<div style="border-radius: 6px; border: 0.3px solid rgba(255,255,255,0.3);padding:3px 8px;margin-top:6px;background: rgba(255,255,255,0.3);">
+                return `<div style="border-radius: 6px; border: 0.3px solid rgba(255,255,255,0.3);padding:3px 8px;margin-top:6px;background: rgba(255,255,255,0.1);">
                           <span style="font-size:small;"><i>${this.thoiGian}</i></span><br>
                           <table border="0" style="width:100%;text-align:center;">
                             <tr>
@@ -126,7 +126,7 @@ setTimeout(function(){window.location.reload();}, 300000);
               }
               else
               {
-                return `<div style="border-radius: 6px; border: 1.5px solid orange;padding:3px 8px;margin-top:6px;box-shadow: 0px 0px 6px rgba(255,255,255,0.4);color:var(--gold);font-weight:bold;background: rgba(255,255,255,0.3);">
+                return `<div style="border-radius: 6px; border: 1.5px solid orange;padding:3px 8px;margin-top:6px;box-shadow: 0px 0px 6px rgba(255,255,255,0.4);color:var(--gold);font-weight:bold;background: rgba(255,255,255,0.1);">
                           <span style="font-size:small;"><i>${this.thoiGian}</i></span><br>
                           <table border="0" style="width:100%;text-align:center;">
                             <tr>
