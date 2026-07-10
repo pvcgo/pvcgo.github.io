@@ -39,14 +39,14 @@ const vong32 = new VongDau("Vòng 32 đội", [
 
 
           const tuKet = new VongDau("Tứ kết", [
-              new TranDau(25, "10/07 03:00", "MARoc", null, "FRA", null),
+              new TranDau(25, "10/07 03:00", "MARoc", 0, "FRA", 2),
               new TranDau(26, "11/07 02:00", "TayBanNha", null, "Bir", null),
               new TranDau(27, "12/07 04:00", "nauy", null, "ENG", null),
               new TranDau(28, "12/07 08:00", "AcHen", null, "ThuySi", null)
           ]);
 
           const banKet = new VongDau("Bán kết", [
-              new TranDau(29, "15/07 02:00", null, null, null, null),
+              new TranDau(29, "15/07 02:00", "FRA", null, null, null),
               new TranDau(30, "16/07 02:00", null, null, null, null)
           ]);
 
