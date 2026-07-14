@@ -46,7 +46,7 @@ const vong32 = new VongDau("Vòng 32 đội", [
           ]);
 
           const banKet = new VongDau("Bán kết", [
-              new TranDau(29, "15/07 02:00", "FRA", null, "TayBanNha", null),
+              new TranDau(29, "15/07 02:00", "FRA", 0, "TayBanNha", 1),
               new TranDau(30, "16/07 02:00", "ENG", null, "AcHen", null)
           ]);
 
