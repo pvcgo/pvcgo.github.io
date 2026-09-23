@@ -131,7 +131,7 @@ body
 {
     .container 
     {
-        grid-template-columns: minmax(260px, 1fr);
+        grid-template-columns: 1fr;
         margin-top:0px;
         gap:0px;
         padding:0px;
@@ -207,7 +207,7 @@ body
     .pannel
     {
         margin-top:40px;
-        width:80%;
+        width:95%;
         box-shadow: 0 0 0 white;
     }
 }
