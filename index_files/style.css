@@ -131,8 +131,8 @@ body
 {
     .container 
     {
-        display:flex;
-        flex-direction: column;
+        display:grid;
+        grid-template-columns: 1fr;
         margin-top:0px;
         gap:0px;
         padding:0px;
@@ -208,7 +208,7 @@ body
     .pannel
     {
         margin-top:40px;
-        width:95%;
+        width:98%;
         box-shadow: 0 0 0 white;
     }
 }
