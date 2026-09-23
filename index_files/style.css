@@ -131,7 +131,8 @@ body
 {
     .container 
     {
-        grid-template-columns: 1fr;
+        display:flex;
+        flex-direction: column;
         margin-top:0px;
         gap:0px;
         padding:0px;
