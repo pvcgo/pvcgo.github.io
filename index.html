@@ -37,70 +37,115 @@
                 
                 </div>
             </div>
+
+            <div class="pannel">
+                <div class="pannel-grid" id="pannel4">
+                
+                </div>
+            </div>
+
+            <div class="pannel">
+                <div class="pannel-grid" id="pannel5">
+                
+                </div>
+            </div>
+
+            <div class="pannel">
+                <div class="pannel-grid" id="pannel6">
+                
+                </div>
+            </div>
     </div>
 <br><span style="color: rgba(255,255,255,0.8);">@PVC Menu</span>
-    <script>
-        let pannel1 = document.getElementById('pannel1');
-        let pannel2 = document.getElementById('pannel2');  
-        let pannel3 = document.getElementById('pannel3');
+    <script>      
 
-        var DSButton = [ 
-            new MenuButton(1, "1_1","https://chat.openai.com",'Chat GPT','openai.svg',''),
-            new MenuButton(1, "1_2","https://gemini.google.com/",'Gemini','gemini.png',''),
+        var DSButton = [            
 
             new MenuButton(1, "1_3","https://drive.google.com/",'Drive','drive.png',''),
             new MenuButton(1, "1_4","https://chat.zalo.me",'Zalo','zalo.png',''),
 
-            new MenuButton(1, "1_5","https://pvcfile.github.io/copy",'PVC Copy','pvccopy.png',''),
-            new MenuButton(1, "1_6","https://pvcfile.github.io",'FAST FILE','file.jpg',''),
-
-            new MenuButton(1, "1_7","https://phamcuong8868.github.io/chinese/",'学汉语','','',''),
-            new MenuButton(1, "1_8","https://danhba.great-site.net/",'DBĐT','danhba.svg','50px'),
+            new MenuButton(1, "1_1","https://chat.openai.com",'Chat GPT','openai.svg',''),
+            new MenuButton(1, "1_2","https://gemini.google.com/",'Gemini','gemini.png',''),
+            new MenuButton(1, "2_9","https://claude.com/",'Claude SI','claude.png',''),
+            
+            
 
             new MenuButton(1, "1_9","https://docs.google.com/forms/d/e/1FAIpQLScBhvPfij33CfC3Jl5eAw0c1kv5KybK_-Eg78h47UdwAKCKFQ/viewform",'Phiếu chi mới','money.jpg',''),
             new MenuButton(1, "1_10","https://docs.google.com/spreadsheets/d/17YTTLV6hJekGBqV-vDZtkk7AlmWelMGzbaVjN96TQcM/edit?usp=drive_link",'Tổng hợp chi','sheet.jpg',''),
 
 
             new MenuButton(2, "2_1","https://canva.com",'Canva','canva.png',''),
-            new MenuButton(2, "2_2","https://www.figma.com/",'Figma','figma.png',''),
-
-            new MenuButton(2, "2_3","https://www.appsheet.com/",'Appsheet','appSheet.png',''),
-            new MenuButton(2, "2_4","https://github.com/",'Github','github.svg',''),
+            new MenuButton(2, "2_2","https://www.figma.com/",'Figma','figma.png',''),            
 
             new MenuButton(2, "2_5","https://www.pinterest.com/",'Pinterest','printerest.png',''),
-            new MenuButton(2, "2_6","https://www.infinityfree.com/",'Infinity','infinity.svg','25px'),
-            new MenuButton(2, "2_7","https://pvctech.github.io/",'pvctech.github.io','github.svg',''),
             new MenuButton(2, "2_8","https://app.diagrams.net/",'Draw.io','draw-io.webp',''),
-            new MenuButton(2, "2_9","https://pvctech.github.io/html",'PVC codepen','claude.png',''),
             new MenuButton(2, "2_10","https://www.svgrepo.com/svg/426876/neon-app-icon",'SVG repo','svgrepo.svg',''),
             
 
             new MenuButton(3, "3_1","https://pkpgroup.github.io/music-player-html/",'CD PKPPhương','cd.png',''),
             new MenuButton(3, "3_2","https://pkp-deptrai.github.io/PKPweb/thoi-khoa-bieu.htm",'Thời khoá biểu','',''),
-
-            new MenuButton(3, "3_3","https://jsfiddle.net", "JSFiddle", "jsfiddle.png", ''),                    
-            new MenuButton(3, "3_4","https://pvctask.great-site.net/", 'PVC TASK','task.svg', ''),
-
-            new MenuButton(3, "3_5","https://mailinhnamdinh.github.io/",'Mai Linh App','mailinh.png',''),
-            new MenuButton(3, "3_6","https://tanhuestudio.github.io/",'Tan Hue Studio','',''),
+  
             new MenuButton(3, "3_7","https://studio.youtube.com/channel/UCEB37HtAt5wB7QWEyqxr6SA/music?hl=vi-VN", "Free YT music", "", ""),
 
-            new MenuButton(3, "3_8","https://tnu.aum.edu.vn/login/index.php",'TNU AUM','tnu.png',''),
-            new MenuButton(3, "3_9","https://tnu.great-site.net/",'TNU PVC','tnu.png',''),
-            new MenuButton(3, "3_10","https://pvcapp.github.io/",'PVC APP','task.svg','')
+            
+
+            new MenuButton(4, "2_3","https://www.appsheet.com/",'Appsheet','appSheet.png',''),
+            new MenuButton(4, "2_4","https://github.com/",'Github','github.svg',''),            
+            
+            new MenuButton(4, "4_7","https://studio.youtube.com/channel/UCEB37HtAt5wB7QWEyqxr6SA/music?hl=vi-VN", "Free YT music", "", ""),
+            new MenuButton(4, "4_6","https://www.infinityfree.com/",'Infinity','infinity.svg','25px'),
+            
+            new MenuButton(4, "2_9","https://pvctech.github.io/html",'PVC codepen','claude.png',''),
+            new MenuButton(4, "5_10","https://pvcapp.github.io/",'PVC APP','task.svg',''),
+            new MenuButton(4, "3_3","https://jsfiddle.net", "JSFiddle", "jsfiddle.png", ''),
+            new MenuButton(4, "3_3","https://nextjs.org/", "Next.js", "vercel.svg", ''),
+            
+                      
+
+            new MenuButton(5, "5_4","https://pvctask.great-site.net/", 'PVC TASK','task.svg', ''),
+                   
+
+            new MenuButton(5, "5_5","https://pvcfile.github.io/copy",'PVC Copy','pvccopy.png',''),
+            new MenuButton(5, "5_6","https://pvcfile.github.io",'FAST FILE','file.jpg',''),
+
+            new MenuButton(5, "5_7","https://phamcuong8868.github.io/chinese/",'学汉语','','',''),
+            new MenuButton(5, "5_8","https://danhba.great-site.net/",'DBĐT','danhba.svg','50px'),            
+            new MenuButton(5, "2_7","https://pvctech.github.io/",'pvctech.github.io','github.svg',''),
+            new MenuButton(5, "5_9","https://tnu.great-site.net/",'TNU PVC','tnu.png',''),     
+
+
+            new MenuButton(6, "6_1","https://tanhuestudio.github.io/",'Tan Hue Studio','',''),
+            new MenuButton(6, "6_5","https://mailinhnamdinh.github.io/",'Mai Linh App','mailinh.png',''),
         
         ];
+
+
+        var dsPannel = 
+        [
+            {caption: 'Công cụ tổng quát hay dùng', element: null},
+            {caption: 'Công cụ Design', element: null},
+            {caption: 'Công cụ SI', element: null},
+            {caption: 'Công cụ lập trình web/App', element: null},
+            {caption: 'APP handmade', element: null},
+            {caption: 'Menu khác', element: null},
+        ];
+
+        for (let i=0;i < dsPannel.length; i ++)
+        {
+            let stt = i + 1;
+            dsPannel[i].element = document.getElementById('pannel' + stt);
+            let caption = document.createElement('div');
+            caption.className = 'pannel__caption';
+            caption.innerText = dsPannel[i].caption;
+            dsPannel[i].element.appendChild(caption);
+        }
         
         
         
         for (let i=0; i < DSButton.length; i++)
         {    
-            if (DSButton[i].pannelStt == 1)
-                pannel1.appendChild(DSButton[i].toElement());
-            else if (DSButton[i].pannelStt == 2)
-                pannel2.appendChild(DSButton[i].toElement());
-            else if (DSButton[i].pannelStt == 3)
-                pannel3.appendChild(DSButton[i].toElement());
+            console.log(i);
+            dsPannel[DSButton[i].pannelStt - 1].element.appendChild(DSButton[i].toElement());      
         }
 
         renderFavoriteButtons();
