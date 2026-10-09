@@ -21,7 +21,7 @@ class MenuButton
         let divImg = document.createElement('div');
         if (this.imageSrc == '')
         {
-            divImg.innerHTMl = "<span style='height:15px;'>&nbsp;</span>";
+            divImg.innerHTML = "<span style='height:15px;'>&nbsp;</span>";
             divv.appendChild(divImg);
         }
         else
