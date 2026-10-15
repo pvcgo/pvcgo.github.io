@@ -1,6 +1,6 @@
 class MenuButton
 {
-    constructor (pannelStt , id, link,text,imageSrc,imageWidth="", imageHeight="")
+    constructor ({pannelStt , id, link,text,imageSrc,imageWidth="", imageHeight="", favorite =0})
     {
         this.pannelStt = pannelStt;
         this.id = id;
@@ -9,6 +9,7 @@ class MenuButton
         this.imageSrc = imageSrc;
         this.imageWidth = imageWidth;
         this.imageHeight = imageHeight;
+        this.favorite = favorite;
     }
 
     toElement()
@@ -68,8 +69,27 @@ class MenuButton
     }
 }
 
+function clearOldButtonCache()
+{
+    console.log('cleared old button');
+    if (DSButton.length > 0)
+    {
+        let danhSachId = new Set(DSButton.map(bt => bt.id));
+        let countKey = 'pvcMenuClick_count';
+        let countMap = JSON.parse(localStorage.getItem(countKey))  || {};
+        Object.keys(countMap).forEach(key => {
+            if (!danhSachId.has(key))
+            {
+                delete countMap[key];
+            }
+        });
+        localStorage.setItem(countKey, JSON.stringify(countMap));
+    }    
+}
+
 function renderFavoriteButtons()
 {
+    clearOldButtonCache();
     favoriteMenu = document.getElementById('favoriteMenu');
     let countKey = 'pvcMenuClick_count';
     let countMap = JSON.parse(localStorage.getItem(countKey)) || {};
@@ -85,7 +105,8 @@ function renderFavoriteButtons()
     top6.forEach(([id, count]) => {
         const menuItem = DSButton.find(item => item.id === id);
         if (menuItem) {
-            const btn = new MenuButton(menuItem.pannelStt, menuItem.id, menuItem.link, menuItem.text, menuItem.imageSrc, menuItem.imageWidth);
+            const btn = new MenuButton({pannelStt: menuItem.pannelStt , id: menuItem.id, link: menuItem.link,
+                text: menuItem.text, imageSrc: menuItem.imageSrc, imageWidth: menuItem.imageWidth, imageHeight: "", favorite: 1});
             favoriteMenu.appendChild(btn.toElement());
         }
     });
